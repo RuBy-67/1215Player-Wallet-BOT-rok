@@ -1,56 +1,53 @@
-# Perplex-Bot
-Perplex is a multipurpose Discord Bot, with features like a captcha system, join-to-create system and much more
-- Released: 28.07.2022
-- [💌 Invite the bot](https://discord.com/api/oauth2/authorize?client_id=1009480009821474936&permissions=8&scope=bot%20applications.commands)
+<h3 align="center">SheetsBot</h3>
 <p align="center">
-	<a href="https://discord.gg/yVWygKS3Xn">
-		<img src="https://canary.discordapp.com/api/guilds/999373116918743100/embed.png" alt="Discord server">
-	</a>
+	SheetsBot is a discord bot that allows you to read, write and remove data from Google Sheets.
 </p>
 
-## Installation
+## Important:
+- No additional help will be provided for this repository.
+- Read the `readme.md` file for complete information about the bot.
+- It is recommended to watch the GoogleSheetsAPI tutorial for more information. (Link Below, Under Configuration)
+- If you have any questions, please contact me on [discord](https://discord.com/users/661501985517862972).
 
-1. Start cloning the repository and installing the dependencies.
-```bash
-git clone https://github.com/gokiimax/Perplex-Bot.git
-cd Perplex-Bot
-npm install
-```
-2. Make sure you installed [ffmpeg](https://ffmpeg.org/) (for the music system)
-3. Create a free [MongoDB Database](https://www.mongodb.com/)
-4. Edit your config.json file to your preferences, Create a token on the [Discord Developer Portal](https://discord.com/developers/applications)
-### Config:
+## Requirements
+- Discord.js v13 or higher (`npm install discord.js@latest`)
+- NodeJS v16.6 or higher
+- Google APIs Client Library for NodeJS (`npm install googleapis`)
+- `applications.commands` scope enabled for your bot in [developer portal](https://discord.com/developers)
+- Basic knowlegde of Discord.js or JavaScript or NodeJS
+
+## Getting Started
+#### Creating a fork
+- [Click here to create a fork](https://github.com/Simpleboy353/SheetsBot)
+- Open your terminal and do `git clone https://github.com/Simpleboy353/SheetsBot.git`
+
+#### Installing dependencies
+- Open your terminal and do `npm install`
+
+#### Starting the bot
+##### Do any one
+- `npm start`
+- `node index.js`
+- `node .`
+
+## Configuration
+- Edit the `config.json` file
 ```json
 {
-    "token": "YOUR TOKEN HERE",
-    "developerGuild": "GUILD ID HERE",
-    "activityInterval": 5,
-    "botMainColor": "0x9733f5",
-    "botErrorColor": "0xdb3535",
-    "database": "MONGO-DB LINK HERE"
+	"botToken": "ENTER_YOUR_BOT_TOKEN_HERE",
+	"spreadsheetId": "ID_OF_THE_GOOGLE_SHEET",
+	"ownerId": "ENTER_YOIUR_ID_HERE",
+	"prefix": "ANY_PREFIX_OF_YOUR_CHOICE",
+	"error_logs": "ENTER_THE_ERROR_LOGS_CHANNEL_ID_HERE"
 }
 ```
-5. If you finished to configurate, you can start the bot
-```bash
-npm run start
-```
+- `botToken` is the token of your bot
+- `spreadsheetId` is the ID of the Google Sheet you want to use
+- `ownerId` is the ID of the owner of the bot
+- `prefix` is the prefix of the bot
+- `error_logs` is the ID of the channel where you want to send the error logs
+- You will also need an additional credentials file to use this bot.
+- **Watch this video to see the full Google Sheets API Tutorial:**
+- [![GoogleAPI Tutorial](http://img.youtube.com/vi/PFJNJQCU_lo/0.jpg)](http://www.youtube.com/watch?v=PFJNJQCU_lo "MongoDB Tutorial")
 
-## Checklist
-- [ ] - Help Command
-- [ ] - Fun Commands
-- [ ] - More features...
-
-## Contributing
-You are welcome to contribute by submitting a Pull Request to the repository.
-
-## Author
-[gokimax](https://github.com/gokiimax)
-
-## ☕️ Support & Socials
-My Bot is open source and free to use. If you found any of my repos useful and would like to support my projects, feel free to donate to my bitcoin address.
-
-### 🔗 bc1qg2v8p3pz6u2h8mnhw47azcjhevf800037l64uj
-
-[![TikTok Link](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@maxii.x6)
-[![Twitter Link](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gokimax_x)
-[![Insta Link](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/maxii.x6)
+## Star the Repo if you liked it!

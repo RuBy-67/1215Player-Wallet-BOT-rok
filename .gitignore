@@ -1,2 +1,4 @@
-config.json
+renovate.json
 node_modules
+src/jsons/config.json
+src/jsons/credentials.json
