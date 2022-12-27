@@ -1,13 +1,8 @@
-<h3 align="center">SheetsBot</h3>
+<h3 align="center">1215 Wallet Bot</h3>
 <p align="center">
-	SheetsBot is a discord bot that allows you to read, write and remove data from Google Sheets.
+	1215 Wallet Bot is a discord bot that allows you to read, write and remove data from Google Sheets.
 </p>
 
-## Important:
-- No additional help will be provided for this repository.
-- Read the `readme.md` file for complete information about the bot.
-- It is recommended to watch the GoogleSheetsAPI tutorial for more information. (Link Below, Under Configuration)
-- If you have any questions, please contact me on [discord](https://discord.com/users/661501985517862972).
 
 ## Requirements
 - Discord.js v13 or higher (`npm install discord.js@latest`)
@@ -16,13 +11,6 @@
 - `applications.commands` scope enabled for your bot in [developer portal](https://discord.com/developers)
 - Basic knowlegde of Discord.js or JavaScript or NodeJS
 
-## Getting Started
-#### Creating a fork
-- [Click here to create a fork](https://github.com/Simpleboy353/SheetsBot)
-- Open your terminal and do `git clone https://github.com/Simpleboy353/SheetsBot.git`
-
-#### Installing dependencies
-- Open your terminal and do `npm install`
 
 #### Starting the bot
 ##### Do any one
@@ -31,7 +19,7 @@
 - `node .`
 
 ## Configuration
-- Edit the `config.json` file
+- create the `config.json` file
 ```json
 {
 	"botToken": "ENTER_YOUR_BOT_TOKEN_HERE",
@@ -48,6 +36,6 @@
 - `error_logs` is the ID of the channel where you want to send the error logs
 - You will also need an additional credentials file to use this bot.
 - **Watch this video to see the full Google Sheets API Tutorial:**
-- [![GoogleAPI Tutorial](http://img.youtube.com/vi/PFJNJQCU_lo/0.jpg)](http://www.youtube.com/watch?v=PFJNJQCU_lo "MongoDB Tutorial")
+- [![GoogleAPI Tutorial](http://img.youtube.com/vi/PFJNJQCU_lo/0.jpg)](http://www.youtube.com/watch?v=PFJNJQCU_lo)
 
 ## Star the Repo if you liked it!
