@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "user",
-  description: "Checks if you are in the list",
+  description: "See info of user",
   options: [
     {
       name: "user",
@@ -18,7 +18,7 @@ module.exports = {
       return client.emojis.cache.get(id).toString();
     }
     const user = await interaction.options.getUser("user");
-    const username = await user.username;
+    const userid = await user.id;
 
     const rows = await client.googleSheets.values.get({
       auth: client.auth,
@@ -26,7 +26,7 @@ module.exports = {
       range: "Sheet1!A:G",
     });
 
-    const data = rows.data.values.find((row) => row[0] === username);
+    const data = rows.data.values.find((row) => row[0] === userid);
 
     if (data) {
       if (rows.data.values.length > 0) {
@@ -34,10 +34,15 @@ module.exports = {
 
         for (let i = 0; i < rows.data.values.length; i++) {
           const row = rows.data.values[i];
-          if (row[0] === username) {
-            embed.setTitle(`${row[0]} - ${row[2]}`);
+          if (row[0] === userid) {
+            embed.setTitle(`${row[1]} - ${row[2]}`);
             embed.setThumbnail(client.user.displayAvatarURL());
             embed.addFields(
+              {
+                name: emoji(emo.discord) + " Player :",
+                value: `<@${row[0]}>`,
+                inline: false,
+              },
               {
                 name: emoji(emo.books) + " In Game Info :",
                 value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[3]}`,
@@ -54,7 +59,7 @@ module.exports = {
                 inline: true,
               },
               {
-                name: emoji(emo.bagGems) + " Current Credit :",
+                name: emoji(emo.bagGems) + " Current Credits :",
                 value: `${row[6]} ` + emoji(emo.gems),
                 inline: false,
               }

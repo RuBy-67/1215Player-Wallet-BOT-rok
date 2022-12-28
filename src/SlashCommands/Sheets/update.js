@@ -1,5 +1,5 @@
 module.exports = {
-  name: "add",
+  name: "update",
   description: "Adds a user to the spreadsheet!",
   options: [
     {
@@ -49,10 +49,32 @@ module.exports = {
     });
 
     const data = rows.data.values.find((row) => row[0] === id);
-
+    let toDeleteRow;
+    for (let i = 0; i < rows.data.values.length; i++) {
+      const row = rows.data.values[i];
+      if (row[0] === id) {
+        toDeleteRow = i;
+      }
+    }
     if (data) {
-      return interaction.reply("User has been in List try to use `/update`");
-    } else if (!data) {
+      await client.googleSheets.batchUpdate({
+        auth: client.auth,
+        spreadsheetId: client.sheetId,
+        resource: {
+          requests: [
+            {
+              deleteDimension: {
+                range: {
+                  sheetId: 0,
+                  dimension: "ROWS",
+                  startIndex: toDeleteRow,
+                  endIndex: toDeleteRow + 1,
+                },
+              },
+            },
+          ],
+        },
+      });
       await client.googleSheets.values.append({
         auth: client.auth,
         spreadsheetId: client.sheetId,
@@ -62,8 +84,9 @@ module.exports = {
           values: [[id, username, IgN, IgId, power, Kpower]],
         },
       });
-
-      return interaction.reply("The user has been added to the list!");
+      return interaction.reply("User has been updated successfully !`");
+    } else if (!data) {
+      return interaction.reply("User not found");
     }
   },
 };
