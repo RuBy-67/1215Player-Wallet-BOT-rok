@@ -48,45 +48,27 @@ module.exports = {
       range: "Sheet1!A:A",
     });
 
-    const data = rows.data.values.find((row) => row[0] === id);
-    let toDeleteRow;
-    for (let i = 0; i < rows.data.values.length; i++) {
-      const row = rows.data.values[i];
-      if (row[0] === id) {
-        toDeleteRow = i;
-      }
-    }
-    if (data) {
-      await client.googleSheets.batchUpdate({
-        auth: client.auth,
-        spreadsheetId: client.sheetId,
-        resource: {
-          requests: [
-            {
-              deleteDimension: {
-                range: {
-                  sheetId: 0,
-                  dimension: "ROWS",
-                  startIndex: toDeleteRow,
-                  endIndex: toDeleteRow + 1,
-                },
-              },
-            },
-          ],
-        },
-      });
-      await client.googleSheets.values.append({
-        auth: client.auth,
-        spreadsheetId: client.sheetId,
-        range: "Sheet1!A:F",
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          values: [[id, username, IgN, IgId, power, Kpower]],
-        },
-      });
-      return interaction.reply("User has been updated successfully !`");
-    } else if (!data) {
+    const data = rows.data.values;
+
+    const rowIndex = data.findIndex((row) => row[0] === id);
+    const Index = data.findIndex((row) => row[3] === IgId);
+    console.log(rowIndex);
+    if (rowIndex === -1) {
       return interaction.reply("User not found");
     }
+    if (Index === 1) {
+      return interaction.reply(" found");
+    }
+    const range = `A${rowIndex + 1}:Z${rowIndex + 1}`;
+    await client.googleSheets.values.update({
+      auth: client.auth,
+      spreadsheetId: client.sheetId,
+      range,
+      valueInputOption: "USER_ENTERED",
+      resource: {
+        values: [[id, username, IgN, IgId, power, Kpower]],
+      },
+    });
+    return interaction.reply("User has been updated successfully !`");
   },
 };

@@ -49,9 +49,6 @@ process.on("uncaughtException", (err) => {
     .setTitle("Uncaught Exception")
     .setDescription(`${err}`)
     .setColor("RED");
-
-  // Error Handling
-  client.channels.cache.get(error_logs).send({ embeds: [exceptionembed] });
   console.log(err);
 });
 
@@ -68,8 +65,6 @@ process.on("unhandledRejection", (reason, promise) => {
     .addField("Promise", `${promise}`)
     .addField("Reason", `${reason.message}`)
     .setColor("RED");
-//Erorr
-  client.channels.cache.get(error_logs).send({ embeds: [rejectionembed] });
 });
 
 client.login(botToken).then(() => {
