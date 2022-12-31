@@ -1,4 +1,4 @@
-const { MessageEmbed, Message } = require("discord.js");
+const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
@@ -17,21 +17,20 @@ module.exports = {
     function emoji(id) {
       return client.emojis.cache.get(id).toString();
     }
+
     const user = await interaction.options.getUser("user");
     const userid = await user.id;
+    const choices = await interaction.options.getString("table");
 
     const rows1 = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
       range: "Sheet1!A:H",
     });
-
     const data1 = rows1.data.values.find((row) => row[0] === userid);
-
+    const embed1 = new MessageEmbed();
     if (data1) {
       if (rows1.data.values.length > 0) {
-        const embed1 = new MessageEmbed();
-
         for (let i = 0; i < rows1.data.values.length; i++) {
           const row = rows1.data.values[i];
           if (row[0] === userid) {
@@ -42,7 +41,7 @@ module.exports = {
             embed1.addFields(
               {
                 name: emoji(emo.discord) + " User :",
-                value: `<@${row[0]}>`,
+                value: `__**ID: **__<@${row[0]}>`,
                 inline: false,
               },
               {
@@ -52,17 +51,17 @@ module.exports = {
               },
               {
                 name: "Current Power :",
-                value: `${row[4]}` + emoji(emo.sword),
+                value: `${row[4]}.` + emoji(emo.sword),
                 inline: true,
               },
               {
                 name: " Current Kill Power :",
-                value: `${row[5]} ` + emoji(emo.skull),
+                value: `${row[5]}.` + emoji(emo.skull),
                 inline: true,
               },
               {
                 name: emoji(emo.bagGems) + " Current Credits :",
-                value: `${row[7]} ` + emoji(emo.gems),
+                value: `${row[7]}.` + emoji(emo.gems),
                 inline: false,
               }
             );
@@ -74,20 +73,19 @@ module.exports = {
             );
           }
         }
-
-        return interaction.reply({ embeds: [embed1] });
       }
     }
+
     const rows2 = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
       range: "Sheet2!A:H",
     });
+
     const data2 = rows2.data.values.find((row) => row[0] === userid);
+    const embed2 = new MessageEmbed();
     if (data2) {
       if (rows2.data.values.length > 0) {
-        const embed2 = new MessageEmbed();
-
         for (let i = 0; i < rows2.data.values.length; i++) {
           const row = rows2.data.values[i];
           if (row[0] === userid) {
@@ -98,7 +96,7 @@ module.exports = {
             embed2.addFields(
               {
                 name: emoji(emo.discord) + " User :",
-                value: `<@${row[0]}>`,
+                value: `__**ID:**__ <@${row[0]}>`,
                 inline: false,
               },
               {
@@ -108,17 +106,17 @@ module.exports = {
               },
               {
                 name: "Current Power :",
-                value: `${row[4]}` + emoji(emo.sword),
+                value: `${row[4]}. ` + emoji(emo.sword),
                 inline: true,
               },
               {
                 name: " Current Kill Power :",
-                value: `${row[5]} ` + emoji(emo.skull),
+                value: `${row[5]}. ` + emoji(emo.skull),
                 inline: true,
               },
               {
                 name: emoji(emo.bagGems) + " Current Credits :",
-                value: `${row[7]} ` + emoji(emo.gems),
+                value: `${row[7]}. ` + emoji(emo.gems),
                 inline: false,
               }
             );
@@ -130,20 +128,18 @@ module.exports = {
             );
           }
         }
-
-        return message.channel.send(embed2);
       }
     }
+
     const rows3 = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
       range: "Sheet3!A:H",
     });
     const data3 = rows3.data.values.find((row) => row[0] === userid);
+    const embed3 = new MessageEmbed();
     if (data3) {
       if (rows3.data.values.length > 0) {
-        const embed3 = new MessageEmbed();
-
         for (let i = 0; i < rows3.data.values.length; i++) {
           const row = rows3.data.values[i];
           if (row[0] === userid) {
@@ -154,7 +150,7 @@ module.exports = {
             embed3.addFields(
               {
                 name: emoji(emo.discord) + " User :",
-                value: `<@${row[0]}>`,
+                value: `__**ID: **__<@${row[0]}>`,
                 inline: false,
               },
               {
@@ -164,13 +160,18 @@ module.exports = {
               },
               {
                 name: "Current Power :",
-                value: `${row[4]}` + emoji(emo.sword),
+                value: `${row[4]}. ` + emoji(emo.sword),
                 inline: true,
               },
               {
                 name: " Current Kill Power :",
-                value: `${row[5]} ` + emoji(emo.skull),
-                inline: true,
+                value: `${row[5]}. ` + emoji(emo.skull),
+                inline: false,
+              },
+              {
+                name: emoji(emo.ban) + "Reason of Ban",
+                value: `${row[6]}. `,
+                inline: false,
               }
             );
 
@@ -181,9 +182,32 @@ module.exports = {
             );
           }
         }
-
-        return message.channel.send(embed3);
       }
+    }
+
+    if (!data1 && !data2 && !data3) {
+      return interaction.reply("nothing");
+    }
+    if (data1 && !data2 && !data3) {
+      return interaction.reply({ embeds: [embed1] });
+    }
+    if (!data1 && !data2 && data3) {
+      return interaction.reply({ embeds: [embed3] });
+    }
+    if (!data1 && data2 && !data3) {
+      return interaction.reply({ embeds: [embed2] });
+    }
+    if (!data1 && data2 && data3) {
+      return interaction.reply({ embeds: [embed2, embed3] });
+    }
+    if (data1 && data2 && data3) {
+      return interaction.reply({ embeds: [embed1, embed2, embed3] });
+    }
+    if (data1 && data2 && !data3) {
+      return interaction.reply({ embeds: [embed1, embed2] });
+    }
+    if (data1 && !data2 && data3) {
+      return interaction.reply({ embeds: [embed1, embed3] });
     }
   },
 };

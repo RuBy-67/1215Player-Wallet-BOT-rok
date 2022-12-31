@@ -42,7 +42,7 @@ module.exports = {
     }
 
     if (choices == "blacklist") {
-      type = "Sheet1!A2:H";
+      type = "Sheet3!A2:H";
     }
     const embed = new MessageEmbed()
       .setColor("GREEN")
@@ -67,8 +67,6 @@ module.exports = {
             ` **Credits:** ${row[7]}`
         );
       }
-    } else {
-      embed.setDescription("No users added to the list!");
     }
 
     await interaction.reply({ embeds: [embed] });
