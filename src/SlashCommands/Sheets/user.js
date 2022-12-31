@@ -184,7 +184,7 @@ module.exports = {
         }
       }
     }
-
+/// verification des cas de figure SI
     if (!data1 && !data2 && !data3) {
       return interaction.reply("nothing");
     }
