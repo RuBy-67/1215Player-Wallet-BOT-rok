@@ -64,22 +64,37 @@ module.exports = {
       spreadsheetId: client.sheetId,
       range: "Sheet1!A:A",
     });
-
+    const rowCount = rows.data.values.length;
     const data = rows.data.values.find((row) => row[0] === id);
-
-    if (data && choices !== "farm_account") {
-      return interaction.reply("User has been in List try to use `/update`");
-    } else if (!data) {
+    if (data && choices != "farm_account") {
+      return interaction.reply(
+        "User has been in List try to use ``/update`` or if you want to add a second main account on <@" +
+          id +
+          "> please ask to a DATA Team members"
+      );
+    } else if (!data && choices != "farm_account") {
       await client.googleSheets.values.append({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: "Sheet1!A:G",
+        range: "Sheet1!A:I",
         valueInputOption: "USER_ENTERED",
         resource: {
-          values: [[id, username, IgN, IgId, power, Kpower, choices]],
+          values: [
+            [
+              id,
+              username,
+              IgN,
+              IgId,
+              power,
+              Kpower,
+              choices,
+              `=I${rowCount + 1}-U${rowCount + 1}-V${rowCount + 1}`,
+              `=SOMME(J${rowCount + 1}:T${rowCount + 1})`,
+            ],
+          ],
         },
       });
-      return interaction.reply("The user has been added to the list!");
+      return interaction.reply(`The user has been added to the list! `);
     }
     if (choices == "farm_account") {
       const rows = await client.googleSheets.values.get({
@@ -89,18 +104,32 @@ module.exports = {
       });
       const value = rows.data.values.find((row) => row[3] === IgId);
       if (value) {
-        return interaction.reply("farm already added to the list!");
+        return interaction.reply(
+          ":corn: this farm id already added to the list! try to use `/update`"
+        );
       } else {
         await client.googleSheets.values.append({
           auth: client.auth,
           spreadsheetId: client.sheetId,
-          range: "Sheet2!A:G",
+          range: "Sheet2!A:I",
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[id, username, IgN, IgId, power, Kpower, choices]],
+            values: [
+              [
+                id,
+                username,
+                IgN,
+                IgId,
+                power,
+                Kpower,
+                choices,
+                `=I${rowCount + 1}-T${rowCount + 1}-U${rowCount + 1}`,
+                `=SOMME(J${rowCount + 1}:S${rowCount + 1})`,
+              ],
+            ],
           },
         });
-        return interaction.reply("farm added to the list!");
+        return interaction.reply(":corn: farm added to the list!");
       }
     }
   },
