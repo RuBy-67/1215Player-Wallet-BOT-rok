@@ -78,7 +78,7 @@ module.exports = {
         range: "Sheet3!A:F",
         valueInputOption: "USER_ENTERED",
         resource: {
-          values: [[user, IgN, IgId, power, Kpower, reason, addedby]],
+          values: [[user, IgId, IgN, power, Kpower, reason, addedby]],
         },
       });
       function emoji(id) {

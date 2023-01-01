@@ -155,7 +155,7 @@ module.exports = {
               },
               {
                 name: emoji(emo.books) + " In Game Info :",
-                value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[3]}`,
+                value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[1]}`,
                 inline: false,
               },
               {
