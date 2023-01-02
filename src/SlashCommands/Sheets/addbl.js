@@ -1,10 +1,9 @@
 const emo = require(`../../jsons/emoji.json`);
-const BlackListChannel = require(`../../jsons/config.json`);
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "addbl",
-  description: "Adds a user to the spreadsheet!",
+  description: "Adds a user to the Black List ! [Admin_Only]",
   userPerms: ["ADMINISTRATOR"],
   options: [
     {
@@ -68,7 +67,6 @@ module.exports = {
     });
 
     const data = rows.data.values.find((row) => row[2] === IgId);
-
     if (data) {
       return interaction.reply("User has already in BlackList");
     } else if (!data) {

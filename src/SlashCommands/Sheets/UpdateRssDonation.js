@@ -1,8 +1,9 @@
 const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
-  name: "update",
-  description: "update a user to the spreadsheet! [User]",
+  name: "rssdonation",
+  userPerms: ["ADMINISTRATOR"],
+  description: "update Rss Donation of Users [Admin_Only]",
   options: [
     {
       name: "type",
@@ -21,6 +22,78 @@ module.exports = {
       ],
     },
     {
+      name: "rss",
+      description: "Rss Types",
+      required: true,
+      type: "STRING",
+      choices: [
+        {
+          name: "food",
+          value: "food",
+        },
+        {
+          name: "wood",
+          value: "wood",
+        },
+        {
+          name: "stone",
+          value: "stone",
+        },
+        {
+          name: "gold",
+          value: "gold",
+        },
+      ],
+    },
+    {
+      name: "bag",
+      description: "How many ?",
+      required: true,
+      type: "STRING",
+      choices: [
+        {
+          name: "100M",
+          value: "1",
+        },
+        {
+          name: "200M",
+          value: "2",
+        },
+        {
+          name: "300M",
+          value: "3",
+        },
+        {
+          name: "400M",
+          value: "4",
+        },
+        {
+          name: "500M",
+          value: "5",
+        },
+        {
+          name: "600M",
+          value: "6",
+        },
+        {
+          name: "700M",
+          value: "7",
+        },
+        {
+          name: "800M",
+          value: "8",
+        },
+        {
+          name: "900M",
+          value: "9",
+        },
+        {
+          name: "1b",
+          value: "10",
+        },
+      ],
+    },
+    {
       name: "user",
       description: "The user to update to the spreadsheet",
       type: "USER",
@@ -32,34 +105,16 @@ module.exports = {
       type: "STRING",
       required: false,
     },
-    {
-      name: "rokname",
-      description: "in Game Name of player",
-      type: "STRING",
-      required: false,
-    },
-    {
-      name: "power",
-      description: "Current power of the player",
-      type: "STRING",
-      required: false,
-    },
-    {
-      name: "killpower",
-      description: "Curent Kill power of the player",
-      type: "STRING",
-      required: false,
-    },
   ],
   run: async (client, interaction, args) => {
     function emoji(id) {
       return client.emojis.cache.get(id).toString();
     }
     const user = await interaction.options.getUser("user");
-    const IgN = await interaction.options.getString("rokname");
+    const Rss = await interaction.options.getString("rss");
+    const bag = await interaction.options.getString("bag");
+    const amount = await interaction.options.getString("amount");
     const IgId = await interaction.options.getString("rokid");
-    const power = await interaction.options.getString("power");
-    const Kpower = await interaction.options.getString("killpower");
     const choices = await interaction.options.getString("type");
     let username;
     let id;
@@ -89,14 +144,14 @@ module.exports = {
           "User not found, please enter a other User or Gov Id"
         );
       } else if (Index1 != -1) {
-        const range1 = `Sheet1!C${Index1 + 1}:Z${Index1 + 1}`;
+        const range1 = `Sheet1!J${Index1 + 1}:J${Index1 + 1}`;
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
           range: range1,
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[IgN, IgId, power, Kpower]],
+            values: [[amount]],
           },
         });
         return interaction.reply("User has been updated successfully !");

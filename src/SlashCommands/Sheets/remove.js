@@ -1,6 +1,6 @@
 module.exports = {
   name: "remove",
-  description: "Removes a user from the sheet!",
+  description: "Removes a user from the sheet! [Admin_Only]",
   userPerms: ["ADMINISTRATOR"],
   options: [
     {

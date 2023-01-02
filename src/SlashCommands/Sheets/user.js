@@ -38,33 +38,18 @@ module.exports = {
             embed1.setColor("#00FFDB");
             embed1.setThumbnail(user.displayAvatarURL());
             embed1.setDescription("__**Main Account**__");
-            embed1.addFields(
-              {
-                name: emoji(emo.discord) + " User :",
-                value: `__**ID: **__<@${row[0]}>`,
-                inline: false,
-              },
-              {
-                name: emoji(emo.books) + " In Game Info :",
-                value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[3]}`,
-                inline: false,
-              },
-              {
-                name: "Current Power :",
-                value: `${row[4]}.` + emoji(emo.sword),
-                inline: true,
-              },
-              {
-                name: " Current Kill Power :",
-                value: `${row[5]}.` + emoji(emo.skull),
-                inline: true,
-              },
-              {
-                name: emoji(emo.bagGems) + " Current Credits :",
-                value: `${row[7]}.` + emoji(emo.gems),
-                inline: false,
-              }
-            );
+            embed1.addFields({
+              name: `${row[2]}`,
+              value:
+                `__Rok Id:__ **${row[3]}**\n__Power:__ **${row[4]}**` +
+                emoji(emo.sword) +
+                `\n__Kill:__ **${row[5]}** ` +
+                emoji(emo.skull) +
+                `\n__Credits:__ **${row[7]}** ` +
+                emoji(emo.bagGems) +
+                `\n_`,
+              inline: true,
+            });
 
             embed1.setTimestamp(Date.now());
             embed1.setFooter(
@@ -93,33 +78,18 @@ module.exports = {
             embed2.setColor("#daa520");
             embed2.setThumbnail(user.displayAvatarURL());
             embed2.setDescription("__**FARM Account**__");
-            embed2.addFields(
-              {
-                name: emoji(emo.discord) + " User :",
-                value: `__**ID:**__ <@${row[0]}>`,
-                inline: false,
-              },
-              {
-                name: emoji(emo.books) + " In Game Info :",
-                value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[3]}`,
-                inline: false,
-              },
-              {
-                name: "Current Power :",
-                value: `${row[4]}. ` + emoji(emo.sword),
-                inline: true,
-              },
-              {
-                name: " Current Kill Power :",
-                value: `${row[5]}. ` + emoji(emo.skull),
-                inline: true,
-              },
-              {
-                name: emoji(emo.bagGems) + " Current Credits :",
-                value: `${row[7]}. ` + emoji(emo.gems),
-                inline: false,
-              }
-            );
+            embed2.addFields({
+              name: `${row[2]}`,
+              value:
+                `__Rok Id:__ **${row[3]}**\n__Power:__ **${row[4]}**` +
+                emoji(emo.sword) +
+                `\n__Kill:__ **${row[5]}** ` +
+                emoji(emo.skull) +
+                `\n__Credits:__ **${row[7]}** ` +
+                emoji(emo.bagGems) +
+                `\n_`,
+              inline: true,
+            });
 
             embed2.setTimestamp(Date.now());
             embed2.setFooter(

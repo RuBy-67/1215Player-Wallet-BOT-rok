@@ -4,7 +4,6 @@ const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "list",
   description: "Shows all the users added to the list!",
-  userPerms: ["ADMINISTRATOR"],
   options: [
     {
       name: "list",

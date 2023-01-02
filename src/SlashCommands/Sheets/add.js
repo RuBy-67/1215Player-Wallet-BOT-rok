@@ -55,9 +55,14 @@ module.exports = {
     const IgN = await interaction.options.getString("rokname");
     const IgId = await interaction.options.getString("rokid");
     const power = await interaction.options.getString("power");
-    const Kpower = await interaction.options.getString("killpower");
+    const Kill = await interaction.options.getString("killpower");
     const id = await user.id;
     const username = (await user.username) + "#" + user.discriminator;
+
+    let Kpower;
+    if (Kill == null) {
+      Kpower = 0;
+    }
 
     const rows = await client.googleSheets.values.get({
       auth: client.auth,
@@ -68,7 +73,7 @@ module.exports = {
     const data = rows.data.values.find((row) => row[0] === id);
     if (data && choices != "farm_account") {
       return interaction.reply(
-        "User has been in List try to use ``/update`` or if you want to add a second main account on <@" +
+        "User has been in List try to use ``/update`` or if you want to add a second main account on user : <@" +
           id +
           "> please ask to a DATA Team members"
       );
@@ -76,7 +81,7 @@ module.exports = {
       await client.googleSheets.values.append({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: "Sheet1!A:I",
+        range: "Sheet1!A:V",
         valueInputOption: "USER_ENTERED",
         resource: {
           values: [
@@ -88,8 +93,21 @@ module.exports = {
               power,
               Kpower,
               choices,
-              `=I${rowCount + 1}-U${rowCount + 1}-V${rowCount + 1}`,
-              `=SOMME(J${rowCount + 1}:T${rowCount + 1})`,
+              `=I${rowCount + 1}-T${rowCount + 1}-U${rowCount + 1}`,
+              `=SOMME(J${rowCount + 1}:S${rowCount + 1})+V${rowCount + 1})`,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
             ],
           ],
         },
@@ -111,7 +129,7 @@ module.exports = {
         await client.googleSheets.values.append({
           auth: client.auth,
           spreadsheetId: client.sheetId,
-          range: "Sheet2!A:I",
+          range: "Sheet2!A:U",
           valueInputOption: "USER_ENTERED",
           resource: {
             values: [
@@ -123,8 +141,20 @@ module.exports = {
                 power,
                 Kpower,
                 choices,
-                `=I${rowCount + 1}-T${rowCount + 1}-U${rowCount + 1}`,
-                `=SOMME(J${rowCount + 1}:S${rowCount + 1})`,
+                `=I${rowCount + 1}-S${rowCount + 1}-T${rowCount + 1}`,
+                `=SOMME(J${rowCount + 1}:R${rowCount + 1})+U${rowCount + 1}`,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
               ],
             ],
           },
