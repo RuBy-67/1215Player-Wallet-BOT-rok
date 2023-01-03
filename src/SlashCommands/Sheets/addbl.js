@@ -82,7 +82,7 @@ module.exports = {
       function emoji(id) {
         return client.emojis.cache.get(id).toString();
       }
-      const channelId = "1058508883364163686";
+      const channelId = "1059791943552487504";
       const embed = new MessageEmbed();
       embed.setTitle("New Winner");
       embed.setDescription("New Player in Black List");
