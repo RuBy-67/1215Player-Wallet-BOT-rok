@@ -88,7 +88,7 @@ module.exports = {
           value: "9",
         },
         {
-          name: "1b",
+          name: "1B",
           value: "10",
         },
       ],
@@ -113,7 +113,6 @@ module.exports = {
     const user = await interaction.options.getUser("user");
     const Rss = await interaction.options.getString("rss");
     const bag = await interaction.options.getString("bag");
-    const amount = await interaction.options.getString("amount");
     const IgId = await interaction.options.getString("rokid");
     const choices = await interaction.options.getString("type");
     let username;
@@ -128,16 +127,31 @@ module.exports = {
       username = user.username + "#" + user.discriminator;
     }
     //----------------------
+    let credits;
+    if (Rss === "wood" || Rss == "food") {
+      credits = bag * 1;
+    }
+
+    if (Rss === "stone") {
+      credits = bag * 2;
+    }
+
+    if (Rss === "Gold") {
+      credits = bag * 3;
+    }
 
     if (choices === "main_account") {
       const rows = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: "Sheet1!A:E",
+        range: "Sheet1!A:J",
       });
+
       const data = rows.data.values;
       const Index1 = data.findIndex((row) => row[3] === IgId);
+      const matchingRow1 = data.find((row) => row[3] === IgId);
       const rowIndex = data.findIndex((row) => row[0] === id);
+      const matchingRow2 = data.find((row) => row[0] === id);
 
       if (rowIndex == -1 && Index1 == -1) {
         return interaction.reply(
@@ -145,18 +159,20 @@ module.exports = {
         );
       } else if (Index1 != -1) {
         const range1 = `Sheet1!J${Index1 + 1}:J${Index1 + 1}`;
+        const value1 = matchingRow1[9];
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
           range: range1,
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[amount]],
+            values: [[`=${value1}+` + credits]],
           },
         });
-        return interaction.reply("User has been updated successfully !");
+        return interaction.reply("User credit has been updated successfully !");
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
+
         const rowCount = matchingRows.length;
         if (rowCount > 1) {
           const embed = new MessageEmbed();
@@ -180,16 +196,17 @@ module.exports = {
           return interaction.reply({ embeds: [embed] });
         } else if (rowCount == 1) {
           const range2 = `Sheet1!A${rowIndex + 1}:Z${rowIndex + 1}`;
+          const value2 = matchingRow2[9];
           await client.googleSheets.values.update({
             auth: client.auth,
             spreadsheetId: client.sheetId,
             range: range2,
             valueInputOption: "USER_ENTERED",
             resource: {
-              values: [[id, username, IgN, IgId, power, Kpower]],
+              values: [[`=${value2}+` + credits]],
             },
           });
-          return interaction.reply("User has been updated successfully !");
+          return interaction.reply("User credits has been updated successfully !");
         }
       }
     } else if (choices === "farm_account") {
@@ -201,8 +218,8 @@ module.exports = {
       const data = rows.data.values;
       const Index1 = data.findIndex((row) => row[3] === IgId);
       const rowIndex = data.findIndex((row) => row[0] === id);
-      console.log(rowIndex);
-      console.log(Index1);
+      const matchingRow1 = data.find((row) => row[3] === IgId);
+      const matchingRow2 = data.find((row) => row[0] === id);
 
       if (rowIndex == -1 && Index1 == -1) {
         return interaction.reply(
@@ -210,13 +227,14 @@ module.exports = {
         );
       } else if (Index1 != -1) {
         const range1 = `Sheet2!C${Index1 + 1}:Z${Index1 + 1}`;
+        const value1 = matchingRow1[9];
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
           range: range1,
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[IgN, IgId, power, Kpower]],
+            values: [[`=${value1}+` + credits]],
           },
         });
         return interaction.reply("User has been updated successfully !");
@@ -244,14 +262,15 @@ module.exports = {
           }
           return interaction.reply({ embeds: [embed] });
         } else if (rowCount == 1) {
-          const range2 = `Sheet2!A${rowIndex + 1}:Z${rowIndex + 1}`;
+          const range2 = `Sheet2!J${rowIndex + 1}:J${rowIndex + 1}`;
+          const value2 = matchingRow2[9];
           await client.googleSheets.values.update({
             auth: client.auth,
             spreadsheetId: client.sheetId,
             range: range2,
             valueInputOption: "USER_ENTERED",
             resource: {
-              values: [[id, username, IgN, IgId, power, Kpower]],
+              values: [[`=${value1}+` + credits]],
             },
           });
           return interaction.reply(
