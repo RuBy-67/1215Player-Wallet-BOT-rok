@@ -206,7 +206,7 @@ module.exports = {
               values: [[`=${value2}+` + credits]],
             },
           });
-          return interaction.reply("User credits has been updated successfully !");
+          return interaction.reply("User credits 'Rss Donation' has been updated successfully !");
         }
       }
     } else if (choices === "farm_account") {
@@ -237,7 +237,9 @@ module.exports = {
             values: [[`=${value1}+` + credits]],
           },
         });
-        return interaction.reply("User has been updated successfully !");
+        return interaction.reply(
+          "User credits 'Rss Donation' has been updated successfully !"
+        );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
         const rowCount = matchingRows.length;
@@ -274,7 +276,7 @@ module.exports = {
             },
           });
           return interaction.reply(
-            ":corn: User has been updated successfully !"
+            ":corn: User credit 'Rss Donation' has been updated successfully !"
           );
         }
       }
