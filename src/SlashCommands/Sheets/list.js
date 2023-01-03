@@ -43,21 +43,21 @@ module.exports = {
     if (choices == "blacklist") {
       type = "Sheet3!A2:H";
     }
-    const embed = new MessageEmbed()
-      .setColor("GREEN")
-      .setDescription("List of Users type `/user` for more details");
 
     const rows = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
       range: type,
     });
-
     if (rows.data.values.length > 0) {
+      const embeds = [];
       for (let i = 0; i < rows.data.values.length; i++) {
         const row = rows.data.values[i];
+        const embed = new MessageEmbed();
+        embed.setColor("GREEN");
+        embed.setDescription("Type `/user` for more infomation");
         embed.addField(
-          `${row[1]}`,
+          `¤ ${row[1]}`,
           emoji(emo.tag) +
             ` **In game Name:** ${row[2]}\n` +
             emoji(emo.ally) +
@@ -65,9 +65,16 @@ module.exports = {
             emoji(emo.bagGems) +
             ` **Credits:** ${row[7]}`
         );
+        embeds.push(embed);
+        if ((i + 1) % 25 === 0 || i === rows.data.values.length - 1) {
+          for (let i = 0; i < embeds.length; i += 10) {
+            await await interaction.channel.send({
+              embeds: embeds.slice(i, i + 10),
+            });
+          }
+          embeds.length = 0;
+        }
       }
     }
-
-    await interaction.reply({ embeds: [embed] });
   },
 };

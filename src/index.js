@@ -19,6 +19,7 @@ const client = new Client({
     Intents.FLAGS.GUILD_INVITES,
     Intents.FLAGS.GUILD_BANS,
     Intents.FLAGS.GUILD_PRESENCES,
+
   ],
 });
 

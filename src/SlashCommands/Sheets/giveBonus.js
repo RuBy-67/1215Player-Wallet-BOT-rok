@@ -1,8 +1,7 @@
 const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
-  name: "rssdonation",
-  userPerms: ["MANAGE_EMOJIS"],
+  name: "givebonus",
   description: "update Rss Donation of Users [Admin_Only]",
   options: [
     {
@@ -22,78 +21,6 @@ module.exports = {
       ],
     },
     {
-      name: "rss",
-      description: "Rss Types",
-      required: true,
-      type: "STRING",
-      choices: [
-        {
-          name: "food",
-          value: "food",
-        },
-        {
-          name: "wood",
-          value: "wood",
-        },
-        {
-          name: "stone",
-          value: "stone",
-        },
-        {
-          name: "gold",
-          value: "gold",
-        },
-      ],
-    },
-    {
-      name: "bag",
-      description: "How many ?",
-      required: true,
-      type: "STRING",
-      choices: [
-        {
-          name: "100M",
-          value: "1",
-        },
-        {
-          name: "200M",
-          value: "2",
-        },
-        {
-          name: "300M",
-          value: "3",
-        },
-        {
-          name: "400M",
-          value: "4",
-        },
-        {
-          name: "500M",
-          value: "5",
-        },
-        {
-          name: "600M",
-          value: "6",
-        },
-        {
-          name: "700M",
-          value: "7",
-        },
-        {
-          name: "800M",
-          value: "8",
-        },
-        {
-          name: "900M",
-          value: "9",
-        },
-        {
-          name: "1B",
-          value: "10",
-        },
-      ],
-    },
-    {
       name: "user",
       description: "The user to update to the spreadsheet",
       type: "USER",
@@ -104,6 +31,50 @@ module.exports = {
       description: "in Game Id of player",
       type: "STRING",
       required: false,
+    },
+    {
+      name: "give",
+      description: "give to ?",
+      required: false,
+      type: "STRING",
+      choices: [
+        {
+          name: "all",
+          value: "all",
+        },
+        {
+          name: "leader_ship",
+          value: "leader_ship",
+        },
+        {
+          name: "data_team",
+          value: "data_team",
+        },
+        {
+          name: "post_office_team",
+          value: "post_office_team",
+        },
+        {
+          name: "title_giver_team",
+          value: "title_giver_team",
+        },
+        {
+          name: "kingdom_event_team",
+          value: "kingdom_event_team",
+        },
+        {
+          name: "kvk_team",
+          value: "kvk_team",
+        },
+        {
+          name: "punishement_teams",
+          value: "punishement_teams",
+        },
+        {
+          name: "ark_team ",
+          value: "ark_team ",
+        },
+      ],
     },
   ],
   run: async (client, interaction, args) => {

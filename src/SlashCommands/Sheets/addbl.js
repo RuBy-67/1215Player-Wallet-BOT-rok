@@ -4,7 +4,6 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "addbl",
   description: "Adds a user to the Black List ! [Admin_Only]",
-  userPerms: ["ADMINISTRATOR"],
   options: [
     {
       name: "addedby",
@@ -112,7 +111,7 @@ module.exports = {
       const channel = client.channels.cache.get(channelId);
       channel.send({ embeds: [embed] });
       return interaction.reply(
-        `User as been added and message sent into <#1058508883364163686>`
+        `User as been added and message sent into <#1059791943552487504>`
       );
     }
   },
