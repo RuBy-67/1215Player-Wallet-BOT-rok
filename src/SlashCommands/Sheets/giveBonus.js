@@ -2,23 +2,13 @@ const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "givebonus",
-  description: "update Rss Donation of Users [Admin_Only]",
+  description: "update bonus of Users [Admin_Only], [Main account]",
   options: [
     {
-      name: "type",
-      description: "Main or Farm Account",
-      required: true,
+      name: "amount",
+      description: "amount of credits",
       type: "STRING",
-      choices: [
-        {
-          name: "main_account",
-          value: "main_account",
-        },
-        {
-          name: "farm_account",
-          value: "farm_account",
-        },
-      ],
+      required: true,
     },
     {
       name: "user",
@@ -34,46 +24,50 @@ module.exports = {
     },
     {
       name: "give",
-      description: "give to ?",
+      description: "give to ? if you choose 'give' don't select user and rok id",
       required: false,
       type: "STRING",
       choices: [
         {
-          name: "all",
+          name: "all", /// tout les membres du kd les crédit vont dans les point "bonus"
           value: "all",
         },
         {
-          name: "leader_ship",
+          name: "leader_ship", // tout les membres R4
           value: "leader_ship",
         },
         {
-          name: "data_team",
+          name: "data_team", //  tout les membres faisant partie de la team data team
           value: "data_team",
         },
         {
-          name: "post_office_team",
+          name: "post_office_team", //  tout les membres faisant partie de la post office
           value: "post_office_team",
         },
         {
-          name: "title_giver_team",
+          name: "title_giver_team", //  tout les membres faisant partie de la tittle giver
           value: "title_giver_team",
         },
         {
-          name: "kingdom_event_team",
+          name: "kingdom_event_team", //  tout les membres faisant partie de la kd event
           value: "kingdom_event_team",
         },
         {
-          name: "kvk_team",
+          name: "kvk_team", //  tout les membres faisant partie de la kvk team
           value: "kvk_team",
         },
         {
-          name: "punishement_teams",
+          name: "punishement_teams", //  tout les membres faisant partie de la punishement teams
           value: "punishement_teams",
         },
         {
-          name: "ark_team ",
-          value: "ark_team ",
+          name: "staff_ark_team",
+          value: "Staff ark_team", //  tout les membres faisant partie de la staff ark team
         },
+        /* {
+          name: "member_ark_team",
+          value: "member_ark_team", //Member with ark team role id 1047194574247972904
+        },*/
       ],
     },
   ],
@@ -82,10 +76,9 @@ module.exports = {
       return client.emojis.cache.get(id).toString();
     }
     const user = await interaction.options.getUser("user");
-    const Rss = await interaction.options.getString("rss");
-    const bag = await interaction.options.getString("bag");
+    const Rss = await interaction.options.getString("amount");
+    const give = await interaction.options.getString("give");
     const IgId = await interaction.options.getString("rokid");
-    const choices = await interaction.options.getString("type");
     let username;
     let id;
     //---------------------------
@@ -98,20 +91,13 @@ module.exports = {
       username = user.username + "#" + user.discriminator;
     }
     //----------------------
-    let credits;
-    if (Rss === "wood" || Rss == "food") {
-      credits = bag * 1;
+    let range
+    if (give == "all") {
+      range = "Sheet1!A:AE"
+
     }
 
-    if (Rss === "stone") {
-      credits = bag * 2;
-    }
 
-    if (Rss === "Gold") {
-      credits = bag * 3;
-    }
-
-    if (choices === "main_account") {
       const rows = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
@@ -129,8 +115,8 @@ module.exports = {
           "User not found, please enter a other User or Gov Id"
         );
       } else if (Index1 != -1) {
-        const range1 = `Sheet1!J${Index1 + 1}:J${Index1 + 1}`;
-        const value1 = matchingRow1[9];
+        const range1 = `Sheet1!L${Index1 + 1}:L${Index1 + 1}`;
+        const value1 = matchingRow1[11];
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
@@ -178,81 +164,10 @@ module.exports = {
             },
           });
           return interaction.reply(
-            "User credits 'Rss Donation' has been updated successfully !"
+            "User credits 'Bonus' has been updated successfully !"
           );
         }
       }
-    } else if (choices === "farm_account") {
-      const rows = await client.googleSheets.values.get({
-        auth: client.auth,
-        spreadsheetId: client.sheetId,
-        range: "Sheet2!A:E",
-      });
-      const data = rows.data.values;
-      const Index1 = data.findIndex((row) => row[3] === IgId);
-      const rowIndex = data.findIndex((row) => row[0] === id);
-      const matchingRow1 = data.find((row) => row[3] === IgId);
-      const matchingRow2 = data.find((row) => row[0] === id);
-
-      if (rowIndex == -1 && Index1 == -1) {
-        return interaction.reply(
-          ":corn: User not found, please enter a other User or Gov Id"
-        );
-      } else if (Index1 != -1) {
-        const range1 = `Sheet2!C${Index1 + 1}:Z${Index1 + 1}`;
-        const value1 = matchingRow1[9];
-        await client.googleSheets.values.update({
-          auth: client.auth,
-          spreadsheetId: client.sheetId,
-          range: range1,
-          valueInputOption: "USER_ENTERED",
-          resource: {
-            values: [[`=${value1}+` + credits]],
-          },
-        });
-        return interaction.reply(
-          "User credits 'Rss Donation' has been updated successfully !"
-        );
-      } else if (rowIndex != -1) {
-        const matchingRows = data.filter((row) => row[0] === id);
-        const rowCount = matchingRows.length;
-        if (rowCount > 1) {
-          const embed = new MessageEmbed();
-          embed.setTitle(username);
-          embed.setColor("#daa520");
-          embed.setDescription(
-            "More than one account please make the change with your gov id, here is the list of your farm accounts"
-          );
-          embed.setTimestamp(Date.now());
-          embed.setFooter(
-            username,
-            "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-          );
-          for (const row of matchingRows) {
-            embed.addField(
-              `:corn: __Name__: **${row[2]}**`,
-              emoji(emo.sword) +
-                `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
-            );
-          }
-          return interaction.reply({ embeds: [embed] });
-        } else if (rowCount == 1) {
-          const range2 = `Sheet2!J${rowIndex + 1}:J${rowIndex + 1}`;
-          const value2 = matchingRow2[9];
-          await client.googleSheets.values.update({
-            auth: client.auth,
-            spreadsheetId: client.sheetId,
-            range: range2,
-            valueInputOption: "USER_ENTERED",
-            resource: {
-              values: [[`=${value1}+` + credits]],
-            },
-          });
-          return interaction.reply(
-            ":corn: User credit 'Rss Donation' has been updated successfully !"
-          );
-        }
-      }
-    }
+    
   },
 };
