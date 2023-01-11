@@ -24,7 +24,8 @@ module.exports = {
     },
     {
       name: "give",
-      description: "give to ? if you choose 'give' don't select user and rok id",
+      description:
+        "give to ? if you choose 'give' don't select user and rok id",
       required: false,
       type: "STRING",
       choices: [
@@ -75,9 +76,9 @@ module.exports = {
     function emoji(id) {
       return client.emojis.cache.get(id).toString();
     }
-    const user = await interaction.options.getUser("user");
-    const Rss = await interaction.options.getString("amount");
+    const credits = await interaction.options.getString("amount");
     const give = await interaction.options.getString("give");
+    const user = await interaction.options.getUser("user");
     const IgId = await interaction.options.getString("rokid");
     let username;
     let id;
@@ -91,83 +92,114 @@ module.exports = {
       username = user.username + "#" + user.discriminator;
     }
     //----------------------
-    let range
+    let range;
+
+    const rows = await client.googleSheets.values.get({
+      auth: client.auth,
+      spreadsheetId: client.sheetId,
+      range: "Sheet1!A:AE",
+    });
+
+    const data = rows.data.values;
+    const Index1 = data.findIndex((row) => row[3] === IgId);
+    const matchingRow1 = data.find((row) => row[3] === IgId);
+    const rowIndex = data.findIndex((row) => row[0] === id);
+    const matchingRow2 = data.find((row) => row[0] === id);
+    //------------ALL---------------
     if (give == "all") {
-      range = "Sheet1!A:AE"
-
-    }
-
-
-      const rows = await client.googleSheets.values.get({
+      let currentValues = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: "Sheet1!A:J",
+        range: "sheet1!L2:L",
       });
+      if (!currentValues.data.values)
+        return interaction.reply("There is no value to update!");
 
-      const data = rows.data.values;
-      const Index1 = data.findIndex((row) => row[3] === IgId);
-      const matchingRow1 = data.find((row) => row[3] === IgId);
-      const rowIndex = data.findIndex((row) => row[0] === id);
-      const matchingRow2 = data.find((row) => row[0] === id);
-
-      if (rowIndex == -1 && Index1 == -1) {
-        return interaction.reply(
-          "User not found, please enter a other User or Gov Id"
+      let updateValues = currentValues.data.values.map((row) => [
+        "=" + row[0] + "+" + credits,
+      ]);
+      await client.googleSheets.values.update({
+        auth: client.auth,
+        spreadsheetId: client.sheetId,
+        range: "sheet1!L2:L",
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          values: updateValues,
+        },
+      });
+      return interaction.reply("User credit has been updated successfully!");
+    }
+    //----------------ALL------------------
+    //----------User / GovID------------
+    if (Index1 != -1) {
+      const range1 = `Sheet1!L2${Index1 + 1}:L${Index1 + 1}`;
+      const value1 = matchingRow1[11];
+      await client.googleSheets.values.update({
+        auth: client.auth,
+        spreadsheetId: client.sheetId,
+        range: range1,
+        valueInputOption: "USER_ENTERED",
+        resource: {
+          values: [[`=${value1}+` + credits]],
+        },
+      });
+      return interaction.reply("User credit has been updated successfully!");
+    } else if (rowIndex != -1) {
+      const matchingRows = data.filter((row) => row[0] === id);
+      const rowCount = matchingRows.length;
+      if (rowCount > 1) {
+        const embed = new MessageEmbed();
+        embed.setTitle(username);
+        embed.setColor("#00FFDB");
+        embed.setDescription(
+          "More than one account please make the change with your gov id, here is the list of your accounts"
         );
-      } else if (Index1 != -1) {
-        const range1 = `Sheet1!L${Index1 + 1}:L${Index1 + 1}`;
-        const value1 = matchingRow1[11];
+        embed.setTimestamp(Date.now());
+        embed.setFooter(
+          username,
+          "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
+        );
+        for (const row of matchingRows) {
+          embed.addField(
+            emoji(emo.ally) + `__Name__: **${row[2]}**`,
+            emoji(emo.sword) +
+              `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
+          );
+        }
+        return interaction.reply({ embeds: [embed] });
+      } else if (rowCount == 1) {
+        const range2 = `Sheet1!L2${rowIndex + 1}:L${rowIndex + 1}`;
+        const value2 = matchingRow2[11];
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
-          range: range1,
+          range: range2,
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[`=${value1}+` + credits]],
+            values: [[`=${value2}+` + credits]],
           },
         });
-        return interaction.reply("User credit has been updated successfully !");
-      } else if (rowIndex != -1) {
-        const matchingRows = data.filter((row) => row[0] === id);
-
-        const rowCount = matchingRows.length;
-        if (rowCount > 1) {
-          const embed = new MessageEmbed();
-          embed.setTitle(username);
-          embed.setColor("#00FFDB");
-          embed.setDescription(
-            "More than one account please make the change with your gov id, here is the list of your accounts"
-          );
-          embed.setTimestamp(Date.now());
-          embed.setFooter(
-            username,
-            "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-          );
-          for (const row of matchingRows) {
-            embed.addField(
-              emoji(emo.ally) + `__Name__: **${row[2]}**`,
-              emoji(emo.sword) +
-                `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
-            );
-          }
-          return interaction.reply({ embeds: [embed] });
-        } else if (rowCount == 1) {
-          const range2 = `Sheet1!A${rowIndex + 1}:Z${rowIndex + 1}`;
-          const value2 = matchingRow2[9];
-          await client.googleSheets.values.update({
-            auth: client.auth,
-            spreadsheetId: client.sheetId,
-            range: range2,
-            valueInputOption: "USER_ENTERED",
-            resource: {
-              values: [[`=${value2}+` + credits]],
-            },
-          });
-          return interaction.reply(
-            "User credits 'Bonus' has been updated successfully !"
-          );
-        }
+        return interaction.reply(
+          "User credits 'Bonus' has been updated successfully!"
+        );
       }
-    
+    } else if (1 == 1) {
+    }
+
+    //----------User / GovID---------------
+    //----------R4 Bonus-------------------
+    //----------R4 Bonus-------------------
+    //----------dataTeam Bonus--------------
+    //----------dataTeam Bonus---------------
+    //----------Post User Bonus---------------
+    //----------Post User Bonus----------------
+    //----------Tittle Giver Bonus-------------
+    //----------Tittle Giver Bonus--------------
+    //----------Kd event team Bonus-------------
+    //----------Kd event team Bonus-------------
+    //----------KvK team Bonus-------------------
+    //----------KvK team Bonus-------------------
+    //----------Punishment teams Bonus------------
+    //----------Punishment teams Bonus------------
   },
 };
