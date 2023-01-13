@@ -189,6 +189,7 @@ module.exports = {
 
     //----------R4 Bonus-------------------
     else if (give == "leader_ship") {
+      interaction.reply(emoji(emo.flam));
       const rows = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
@@ -213,7 +214,7 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> as been updated with ${credits}`
+          `User credit of <@${row[0]}> as been updated with ${credits} credits`
         );
       }
       return interaction.channel.send(
