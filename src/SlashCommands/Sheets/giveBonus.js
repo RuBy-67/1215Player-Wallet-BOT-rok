@@ -92,7 +92,6 @@ module.exports = {
       username = user.username + "#" + user.discriminator;
     }
     //----------------------
-    let range;
 
     const rows = await client.googleSheets.values.get({
       auth: client.auth,
@@ -105,8 +104,65 @@ module.exports = {
     const matchingRow1 = data.find((row) => row[3] === IgId);
     const rowIndex = data.findIndex((row) => row[0] === id);
     const matchingRow2 = data.find((row) => row[0] === id);
+    //----------User / GovID------------
+    if (user != null || IgId != null) {
+      if (Index1 != -1) {
+        const range1 = `Sheet1!L2${Index1 + 1}:L${Index1 + 1}`;
+        const value1 = matchingRow1[11];
+        await client.googleSheets.values.update({
+          auth: client.auth,
+          spreadsheetId: client.sheetId,
+          range: range1,
+          valueInputOption: "USER_ENTERED",
+          resource: {
+            values: [[`=${value1}+` + credits]],
+          },
+        });
+        return interaction.reply("User credit has been updated successfully!");
+      } else if (rowIndex != -1) {
+        const matchingRows = data.filter((row) => row[0] === id);
+        const rowCount = matchingRows.length;
+        if (rowCount > 1) {
+          const embed = new MessageEmbed();
+          embed.setTitle(username);
+          embed.setColor("#00FFDB");
+          embed.setDescription(
+            "More than one account please make the change with your gov id, here is the list of your accounts"
+          );
+          embed.setTimestamp(Date.now());
+          embed.setFooter(
+            username,
+            "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
+          );
+          for (const row of matchingRows) {
+            embed.addField(
+              emoji(emo.ally) + `__Name__: **${row[2]}**`,
+              emoji(emo.sword) +
+                `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
+            );
+          }
+          return interaction.reply({ embeds: [embed] });
+        } else if (rowCount == 1) {
+          const range2 = `Sheet1!L2${rowIndex + 1}:L${rowIndex + 1}`;
+          const value2 = matchingRow2[11];
+          await client.googleSheets.values.update({
+            auth: client.auth,
+            spreadsheetId: client.sheetId,
+            range: range2,
+            valueInputOption: "USER_ENTERED",
+            resource: {
+              values: [[`=${value2}+` + credits]],
+            },
+          });
+          return interaction.reply(
+            "Leadership credits 'leadership' has been updated successfully!"
+          );
+        }
+      }
+    }
+    //----------User / GovID---------------
     //------------ALL---------------
-    if (give == "all") {
+    else if (give == "all") {
       let currentValues = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
@@ -130,76 +186,73 @@ module.exports = {
       return interaction.reply("User credit has been updated successfully!");
     }
     //----------------ALL------------------
-    //----------User / GovID------------
-    if (Index1 != -1) {
-      const range1 = `Sheet1!L2${Index1 + 1}:L${Index1 + 1}`;
-      const value1 = matchingRow1[11];
-      await client.googleSheets.values.update({
+
+    //----------R4 Bonus-------------------
+    else if (give == "leader_ship") {
+      const rows = await client.googleSheets.values.get({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: range1,
-        valueInputOption: "USER_ENTERED",
-        resource: {
-          values: [[`=${value1}+` + credits]],
-        },
+        range: "Sheet1!A:W",
       });
-      return interaction.reply("User credit has been updated successfully!");
-    } else if (rowIndex != -1) {
-      const matchingRows = data.filter((row) => row[0] === id);
-      const rowCount = matchingRows.length;
-      if (rowCount > 1) {
-        const embed = new MessageEmbed();
-        embed.setTitle(username);
-        embed.setColor("#00FFDB");
-        embed.setDescription(
-          "More than one account please make the change with your gov id, here is the list of your accounts"
-        );
-        embed.setTimestamp(Date.now());
-        embed.setFooter(
-          username,
-          "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-        );
-        for (const row of matchingRows) {
-          embed.addField(
-            emoji(emo.ally) + `__Name__: **${row[2]}**`,
-            emoji(emo.sword) +
-              `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
-          );
-        }
-        return interaction.reply({ embeds: [embed] });
-      } else if (rowCount == 1) {
-        const range2 = `Sheet1!L2${rowIndex + 1}:L${rowIndex + 1}`;
-        const value2 = matchingRow2[11];
+      const data = rows.data.values;
+      const matching = data
+        .map((row, index) => {
+          return { ...row, rowIndex: index + 1 };
+        })
+        .filter((row) => row[22] === "yes");
+
+      for (const row of matching) {
+        const newValue = "=" + row[10] + "+" + credits;
         await client.googleSheets.values.update({
           auth: client.auth,
           spreadsheetId: client.sheetId,
-          range: range2,
+          range: `Sheet1!K${row.rowIndex}:K`,
           valueInputOption: "USER_ENTERED",
           resource: {
-            values: [[`=${value2}+` + credits]],
+            values: [[newValue]],
           },
         });
-        return interaction.reply(
-          "User credits 'Bonus' has been updated successfully!"
+        interaction.channel.send(
+          `User credit of <@${row[0]}> as been updated with ${credits}`
         );
       }
-    } else if (1 == 1) {
+      return interaction.channel.send(
+        `**User credit of all R4 as been updated**`
+      );
     }
-
-    //----------User / GovID---------------
-    //----------R4 Bonus-------------------
     //----------R4 Bonus-------------------
     //----------dataTeam Bonus--------------
+    else if (give == "data_team") {
+    }
     //----------dataTeam Bonus---------------
     //----------Post User Bonus---------------
+    else if (give == "post_office_team") {
+    }
     //----------Post User Bonus----------------
     //----------Tittle Giver Bonus-------------
+    else if (give == "title_giver_team") {
+    }
     //----------Tittle Giver Bonus--------------
     //----------Kd event team Bonus-------------
+    if (give == "kingdom_event_team") {
+    }
     //----------Kd event team Bonus-------------
     //----------KvK team Bonus-------------------
+    else if (give == "kvk_team") {
+    }
     //----------KvK team Bonus-------------------
     //----------Punishment teams Bonus------------
+    else if (give == "punishement_teams") {
+    }
     //----------Punishment teams Bonus------------
+    //----------Staff Ark team------------
+    else if (give == "staff_ark_team") {
+    }
+    //----------Staff ark team------------
+    else if (rowIndex == -1 && Index1 == -1) {
+      return interaction.reply(
+        "User not found, please enter a other User or Gov Id"
+      );
+    }
   },
 };
