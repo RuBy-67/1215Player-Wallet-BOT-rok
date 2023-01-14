@@ -14,16 +14,24 @@ module.exports = {
       .setDescription("Here is Help page of 1215 DATA BOT")
       .addFields(
         {
-          name: "Infos",
+          name: emoji(emo.info) + " Infos",
           value:
             "`/user` In game info on a user\n`/buy` Shop of 1215 Kingdom coming ...\n`/kdteam`: kingdom team list \n`/social` Social Network\n\n`[Data_Team_Command]`\n`/helpadmin` Admin commands list",
         },
         {
-          name: "Google Sheet interactions",
+          name:
+            emoji(emo.update) +
+            " " +
+            emoji(emo.googlesheetsicon) +
+            " Google Sheet interactions",
           value:
             "`/add` add you on google sheet\n`/update` Update your in game info",
         },
-        { name: "Tips", value: "`In coming [...]`", inline: true }
+        {
+          name: emoji(emo.tips) + " Tips",
+          value: "`In coming [...]`->`/tips`",
+          inline: true,
+        }
       )
       .setColor("GREEN")
       .setThumbnail(

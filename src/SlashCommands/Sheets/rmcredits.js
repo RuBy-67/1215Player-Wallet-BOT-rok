@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "rmcredits",
   description: "Remove credit from user `[Data_Team_Only]`, `[Main_account]`",
-  userPerms: ["USE_APPLICATION_COMMANDS"],
+  userPerms: ["MANAGE_MESSAGES"],
   options: [
     {
       name: "amount",

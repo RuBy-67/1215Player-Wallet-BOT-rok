@@ -2,7 +2,7 @@ const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "rssdonation",
-  userPerms: ["USE_APPLICATION_COMMANDS"],
+  userPerms: ["MANAGE_MESSAGES"],
   description: "update Rss Donation of Users `[Data_Team_Only]`",
   options: [
     {
@@ -187,10 +187,10 @@ module.exports = {
           );
           embed.setTimestamp(Date.now());
           embed.setFooter({
-        text: username,
-        iconURL:
-          "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
-      })
+            text: username,
+            iconURL:
+              "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+          });
           for (const row of matchingRows) {
             embed.addField(
               emoji(emo.ally) + `__Name__: **${row[2]}**`,

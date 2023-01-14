@@ -4,7 +4,7 @@ module.exports = {
   name: "addcredits",
   description:
     "Give Bonus to a user Users `[Data_Team_Only]`, `[Main_account]`",
-  userPerms: ["USE_APPLICATION_COMMANDS"],
+  userPerms: ["MANAGE_MESSAGES"],
   options: [
     {
       name: "amount",

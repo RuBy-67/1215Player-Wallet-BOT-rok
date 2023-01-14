@@ -3,8 +3,9 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "list",
-  description: "Shows all the users on list (BlackList / Main / FARM! `[Data_Team_Only]`",
-  userPerms: ["USE_APPLICATION_COMMANDS"],
+  description:
+    "Shows all the users on list (BlackList / Main / FARM! `[Data_Team_Only]`",
+  userPerms: ["MANAGE_MESSAGES"],
   options: [
     {
       name: "list",

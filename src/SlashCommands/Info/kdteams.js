@@ -10,7 +10,7 @@ module.exports = {
       return client.emojis.cache.get(id).toString();
     }
     const embed = new MessageEmbed()
-      .setTitle("Kingdom Team")
+      .setTitle(emoji(emo.ananass) + "Kingdom Team")
       .setDescription("Here is Kd teams of 1215 Kingdoms")
       .addFields(
         {

@@ -4,7 +4,7 @@ const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "helpadmin",
   description: "Shows the help Admin page!",
-  userPerms: ["USE_APPLICATION_COMMANDS"],
+  userPerms: ["MANAGE_MESSAGES"],
   options: null,
   run: async (client, interaction, args) => {
     function emoji(id) {
@@ -15,29 +15,29 @@ module.exports = {
       .setDescription("Here is Help 'ADMIN' page of 1215 DATA-BOT")
       .addFields(
         {
-          name: "Infos",
+          name: emoji(emo.info) + " Infos",
           value: "`/list` User List on google sheet",
         },
         /// { name: "\u200B", value: "\u200B" },  troue
         {
-          name: "ADD Info",
+          name: emoji(emo.add) + " ADD Info",
           value:
             "`/addbl` add new user on Black List\n `/addcredits` add credit on a user or a predefined groups",
         },
         {
-          name: "UPDATEInfo",
+          name: emoji(emo.update) + " UPDATE Info",
           value:
             "`/rssdonation` Give Credits after a ressource donation\n`/update` Update in game info of a player",
         },
         {
-          name: "REMOVE Info",
+          name: emoji(emo.delete) + " REMOVE Info",
           value:
             "`/rmuser` remove user on sheet\n`/rmcredits`: remove credits from a user",
         },
         {
-          name: "Google Sheet",
+          name: emoji(emo.googlesheetsicon) + " Google Sheet",
           value:
-            "**!! Keep Secret !!**\n[Google_DATA_Sheet_link](https://docs.google.com/spreadsheets/d/1Dd3zH9E_GxD6IOIaeiql6cnsOw1p6Mkydz35xvFE09w/edit#gid=0)",
+            "**!! Keep this Secret !!**\n[Google_DATA_Sheet_link](https://docs.google.com/spreadsheets/d/1Dd3zH9E_GxD6IOIaeiql6cnsOw1p6Mkydz35xvFE09w/edit#gid=0)",
         }
       )
       .setColor("GREEN")
