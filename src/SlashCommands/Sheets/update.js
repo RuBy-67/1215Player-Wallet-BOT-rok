@@ -2,7 +2,7 @@ const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "update",
-  description: "update a user to the spreadsheet! [User]",
+  description: "update a user to the spreadsheet! `[User]`",
   options: [
     {
       name: "type",
@@ -134,7 +134,7 @@ module.exports = {
               values: [[id, username, IgN, IgId, power, Kpower]],
             },
           });
-          return interaction.reply("User has been updated successfully !");
+          return interaction.reply(`User has been updated successfully !`);
         }
       }
     } else if (choices === "farm_account") {
@@ -181,7 +181,7 @@ module.exports = {
             "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
           );
           for (const row of matchingRows) {
-            embed.addField(
+            embed.addFields(
               `:corn: __Name__: **${row[2]}**`,
               emoji(emo.sword) +
                 `__Power :__ **${row[4]}** __Id :__ **${row[3]}**\n**_**`
@@ -200,7 +200,7 @@ module.exports = {
             },
           });
           return interaction.reply(
-            ":corn: User has been updated successfully !"
+            `:corn: User has been updated successfully !`
           );
         }
       }

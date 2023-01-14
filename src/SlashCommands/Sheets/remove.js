@@ -1,6 +1,7 @@
 module.exports = {
-  name: "remove",
-  description: "Removes a user from the sheet! [Admin_Only]",
+  name: "rmuser",
+  description: "Removes a user from the sheet!(MAIN / FARM / BlackList ) `[Data_Team_Only]`",
+  userPerms: ["USE_APPLICATION_COMMANDS"],
   options: [
     {
       name: "type",

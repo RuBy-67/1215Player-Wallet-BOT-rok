@@ -2,8 +2,8 @@ const { MessageEmbed, Message, Channel } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "rssdonation",
-  userPerms: ["MANAGE_EMOJIS"],
-  description: "update Rss Donation of Users [Admin_Only]",
+  userPerms: ["USE_APPLICATION_COMMANDS"],
+  description: "update Rss Donation of Users `[Data_Team_Only]`",
   options: [
     {
       name: "type",
@@ -169,7 +169,11 @@ module.exports = {
             values: [[`=${value1}+` + credits]],
           },
         });
-        return interaction.reply("User credit has been updated successfully !");
+        return interaction.reply(
+          `User <@${row[1]}> credit has been updated successfully ! with **${
+            value1 + credits
+          }**`
+        );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
 

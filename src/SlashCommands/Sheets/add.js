@@ -1,6 +1,6 @@
 module.exports = {
   name: "add",
-  description: "Adds a user to the spreadsheet!",
+  description: "Adds a user to the spreadsheet! `[User]`",
   options: [
     {
       name: "type",
@@ -94,7 +94,7 @@ module.exports = {
               Kpower,
               choices,
               `=I${rowCount + 1}-T${rowCount + 1}-U${rowCount + 1}`,
-              `=SOMME(J${rowCount + 1}:S${rowCount + 1})+V${rowCount + 1})`,
+              `=SOMME(J${rowCount + 1}:S${rowCount + 1})+V${rowCount + 1}`,
               0,
               0,
               0,

@@ -3,7 +3,8 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "addbl",
-  description: "Adds a user to the Black List ! [Admin_Only]",
+  description: "Adds a user on the Black List ! `[Data_Team_Only]`",
+  userPerms: ["USE_APPLICATION_COMMANDS"],
   options: [
     {
       name: "addedby",
