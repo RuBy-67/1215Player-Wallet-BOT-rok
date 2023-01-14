@@ -52,10 +52,11 @@ module.exports = {
             });
 
             embed1.setTimestamp(Date.now());
-            embed1.setFooter(
-              `${row[2]}`,
-              "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-            );
+            embed1.setFooter({
+              text: `${row[2]}`,
+              iconURL:
+                "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+            });
           }
         }
       }
@@ -92,10 +93,11 @@ module.exports = {
             });
 
             embed2.setTimestamp(Date.now());
-            embed2.setFooter(
-              `${row[2]}`,
-              "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-            );
+            embed2.setFooter({
+              text: `${row[2]}`,
+              iconURL:
+                "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+            });
           }
         }
       }
@@ -146,10 +148,11 @@ module.exports = {
             );
 
             embed3.setTimestamp(Date.now());
-            embed3.setFooter(
-              `${row[2]}`,
-              "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-            );
+            embed3.setFooter({
+              text: `${row[2]}`,
+              iconURL:
+                "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+            });
           }
         }
       }
