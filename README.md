@@ -1,11 +1,13 @@
 <h3 align="center">1215 Wallet Bot</h3>
 <p align="center">
-	1215 Wallet Bot is a discord bot that allows you to read, write and remove data from Google Sheets.
+	1215 Wallet Bot is a discord bot that allows you to read, write and remove data from Google Sheets API.
 </p>
+
+If you are Rise of kingdom Kd and you work with credits system pls write to me. 
 
 
 ## Requirements
-- Discord.js v13 or higher (`npm install discord.js@latest`)
+- Discord.js v13 or higher (`npm install discord.js@latest`) (Update to V14 in coming)
 - NodeJS v16.6 or higher
 - Google APIs Client Library for NodeJS (`npm install googleapis`)
 - `applications.commands` scope enabled for your bot in [developer portal](https://discord.com/developers)
@@ -32,11 +34,16 @@
 - `botToken` is the token of your bot
 - `spreadsheetId` is the ID of the Google Sheet you want to use
 - `ownerId` is the ID of the owner of the bot
-- `prefix` is the prefix of the bot
-- `error_logs` is the ID of the channel where you want to send the error logs
-- You will also need an additional credentials file to use this bot.
-- **Watch this video to see the full Google Sheets API Tutorial:**
+- 
+- Create the `credential.json` file (on Google Cloud Console see video example below)
+- 
+- 
+- **Video to know more about Google sheet API**
 - [![GoogleAPI Tutorial](http://img.youtube.com/vi/PFJNJQCU_lo/0.jpg)](http://www.youtube.com/watch?v=PFJNJQCU_lo)
+- [GoogleAPI Documentation](https://developers.google.com/sheets/api/guides/concepts)
+- 
 
 ## Star the Repo if you liked it!
-MUTE_MEMBERS pour ARK Mana
+In coming release : 
+ARK Management note to me (MUTE-MEMBER	_PERMISSIONS)
+Mge Management
