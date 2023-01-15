@@ -3,7 +3,7 @@
 	1215 Wallet Bot is a discord bot that allows you to read, write and remove data from Google Sheets API.
 </p>
 
-If you are Rise of kingdom Kd and you work with credits system pls write to me. 
+If you are Rise of kingdom Kd and you would to work with same system pls write to me. 
 
 
 ## Requirements
