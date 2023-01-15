@@ -27,7 +27,7 @@ module.exports = {
         {
           name: emoji(emo.update) + " UPDATE Info",
           value:
-            "`/rssdonation` Give Credits after a ressource donation\n`/update` Update in game info of a player",
+            "`/update` Update in game info of a player\n`/rssdonation` Give Credits after a ressource donation\nBAG x 1 credits for 🌽 & 🪵, BAG x 2 credits for 🪨, BAG x 3 credits for 🪙 ",
         },
         {
           name: emoji(emo.delete) + " REMOVE Info",

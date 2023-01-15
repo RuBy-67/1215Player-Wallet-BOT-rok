@@ -155,7 +155,7 @@ module.exports = {
 
       if (rowIndex == -1 && Index1 == -1) {
         return interaction.reply(
-          "User not found, please enter a other User or Gov Id"
+          `User: ${username} / Id: ${IgId} not found, please enter a other User or Gov Id`
         );
       } else if (Index1 != -1) {
         const range1 = `Sheet1!J${Index1 + 1}:J${Index1 + 1}`;
@@ -170,9 +170,7 @@ module.exports = {
           },
         });
         return interaction.reply(
-          `User <@${row[1]}> credit has been updated successfully ! with **${
-            value1 + credits
-          }**`
+          `<@${matchingRow1[0]}>, id: [${matchingRow1[3]}] Credit has been updated successfully ! with **${credits}**`
         );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
@@ -183,7 +181,7 @@ module.exports = {
           embed.setTitle(username);
           embed.setColor("#00FFDB");
           embed.setDescription(
-            "More than one account please make the change with your gov id, here is the list of your accounts"
+            "More than one account please make the change with gov id, here is the list of accounts linked with this user"
           );
           embed.setTimestamp(Date.now());
           embed.setFooter({
@@ -200,7 +198,7 @@ module.exports = {
           }
           return interaction.reply({ embeds: [embed] });
         } else if (rowCount == 1) {
-          const range2 = `Sheet1!A${rowIndex + 1}:Z${rowIndex + 1}`;
+          const range2 = `Sheet1!J${rowIndex + 1}:J${rowIndex + 1}`;
           const value2 = matchingRow2[9];
           await client.googleSheets.values.update({
             auth: client.auth,
@@ -212,7 +210,7 @@ module.exports = {
             },
           });
           return interaction.reply(
-            "User credits 'Rss Donation' has been updated successfully !"
+            `<@${matchingRow2[0]}>, id: [${matchingRow2[3]}] Credits has been updated successfully ! with **${credits}** credits`
           );
         }
       }
@@ -230,10 +228,10 @@ module.exports = {
 
       if (rowIndex == -1 && Index1 == -1) {
         return interaction.reply(
-          ":corn: User not found, please enter a other User or Gov Id"
+          `User: ${username} / Id: ${IgId} not found, please enter a other User or Gov Id`
         );
       } else if (Index1 != -1) {
-        const range1 = `Sheet2!C${Index1 + 1}:Z${Index1 + 1}`;
+        const range1 = `Sheet2!J${Index1 + 1}:J${Index1 + 1}`;
         const value1 = matchingRow1[9];
         await client.googleSheets.values.update({
           auth: client.auth,
@@ -245,7 +243,7 @@ module.exports = {
           },
         });
         return interaction.reply(
-          "User credits 'Rss Donation' has been updated successfully !"
+          `<@${matchingRow1[0]}>, id: [${matchingRow1[3]}]  Credits has been updated successfully ! with **${credits}** credits`
         );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
@@ -255,7 +253,7 @@ module.exports = {
           embed.setTitle(username);
           embed.setColor("#daa520");
           embed.setDescription(
-            "More than one account please make the change with your gov id, here is the list of your farm accounts"
+            "More than one account please make the change with gov id, here is the list of farm accounts linked with this User"
           );
           embed.setTimestamp(Date.now());
           embed.setFooter({
@@ -280,11 +278,11 @@ module.exports = {
             range: range2,
             valueInputOption: "USER_ENTERED",
             resource: {
-              values: [[`=${value1}+` + credits]],
+              values: [[`=${value2}+` + credits]],
             },
           });
           return interaction.reply(
-            ":corn: User credit 'Rss Donation' has been updated successfully !"
+            `<@${matchingRow2[0]}>, id: [${matchingRow2[3]}]  Credits for has been updated successfully ! with **${credits}** credits`
           );
         }
       }
