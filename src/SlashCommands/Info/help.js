@@ -16,7 +16,7 @@ module.exports = {
         {
           name: emoji(emo.info) + " Infos",
           value:
-            "`/user` In game info on a user\n`/buy` Shop of 1215 Kingdom coming ...\n`/kdteam`: kingdom team list \n`/social` Social Network\n\n`[Data_Team_Command]`\n`/helpadmin` Admin commands list",
+            "`/user` In game info on a user\n`/top` Wallet Stats\n`/buy` Shop of 1215 Kingdom coming ...\n`/kdteam`: kingdom team list \n`/social` Social Network\n\n`[Data_Team_Command]`\n`/helpadmin` Admin commands list",
         },
         {
           name:

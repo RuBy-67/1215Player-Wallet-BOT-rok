@@ -25,7 +25,7 @@ module.exports = {
     const rows1 = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
-      range: "Sheet1!A:H",
+      range: "Sheet1!A:U",
     });
     const data1 = rows1.data.values.find((row) => row[0] === userid);
     const embed1 = new MessageEmbed();
@@ -45,7 +45,7 @@ module.exports = {
                 emoji(emo.sword) +
                 `\n__Kill:__ **${row[5]}** ` +
                 emoji(emo.skull) +
-                `\n__Credits:__ **${row[7]}** ` +
+                `\n\n__Credits Spent:__ **${row[19]}** :money_with_wings: \n__Credits Penalities:__ **${row[20]}** :warning:\n\n__Current Credits:__ **${row[7]}**` +
                 emoji(emo.bagGems) +
                 `\n_`,
               inline: true,

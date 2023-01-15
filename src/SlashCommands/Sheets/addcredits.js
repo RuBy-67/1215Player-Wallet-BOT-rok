@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 module.exports = {
   name: "addcredits",
   description:
-    "Give Bonus to a user Users `[Data_Team_Only]`, `[Main_account]`",
+    "Give Bonus to a user Users `[Data_Team_Only]`, `[Main_account]` / `[Main_account]`",
   userPerms: ["MANAGE_MESSAGES"],
   options: [
     {

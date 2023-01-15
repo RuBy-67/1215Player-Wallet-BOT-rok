@@ -63,7 +63,7 @@ module.exports = {
     const rows = await client.googleSheets.values.get({
       auth: client.auth,
       spreadsheetId: client.sheetId,
-      range: "Sheet3!A:D",
+      range: "Sheet3!A:H",
     });
 
     const data = rows.data.values.find((row) => row[2] === IgId);
@@ -73,7 +73,7 @@ module.exports = {
       await client.googleSheets.values.append({
         auth: client.auth,
         spreadsheetId: client.sheetId,
-        range: "Sheet3!A:F",
+        range: "Sheet3!A:G",
         valueInputOption: "USER_ENTERED",
         resource: {
           values: [[user, IgId, IgN, power, Kpower, reason, addedby]],
@@ -83,20 +83,22 @@ module.exports = {
         return client.emojis.cache.get(id).toString();
       }
       const channelId = "1059791943552487504";
+      const ban = await client.googleSheets.values.get({
+        auth: client.auth,
+        spreadsheetId: client.sheetId,
+        range: "Sheet3!I1:I1",
+      });
+      const valu = ban.data.values;
+
       const embed = new MessageEmbed();
       embed.setTitle("New Winner");
       embed.setDescription("New Player in Black List");
       embed.setColor("#FF0000");
-      embed.setFooter({
-        text: "1215",
-        iconURL:
-          "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
-      });
       embed.setTimestamp(Date.now());
       embed.addFields(
         {
           name: emoji(emo.books) + " In Game Info :",
-          value: `__**Name: **__${IgN}\n __**Rok Id:**__ ${IgId}\n__**Power:**__ ${power}`,
+          value: `__**Name: **__${IgN}\n __**Rok Id:**__ ${IgId}\n__**Power:**__ ${power}\n<@${user}>`,
           inline: true,
         },
         {
@@ -108,12 +110,18 @@ module.exports = {
           name: ":book: Reason",
           value: `${reason}.`,
           inline: false,
+        },
+        {
+          name: "👤 People ban",
+          value: `${valu[0]}`,
+          inline: false,
         }
       );
-      embed.setFooter(
-        `${IgN}`,
-        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
-      );
+      embed.setFooter({
+        text: `${IgN}`,
+        iconURL:
+          "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+      });
       const channel = client.channels.cache.get(channelId);
       channel.send({ embeds: [embed] });
       return interaction.reply(
