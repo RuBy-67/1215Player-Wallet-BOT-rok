@@ -64,7 +64,7 @@ module.exports = {
             ` **In game Name:** ${row[2]}\n` +
             emoji(emo.ally) +
             ` **In game id:** ${row[3]}\n` +
-            emoji(emo.bagGems) +
+            emoji(emo.token) +
             ` **Credits:** ${row[7]}`
         );
         embeds.push(embed);

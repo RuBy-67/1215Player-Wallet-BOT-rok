@@ -11,12 +11,15 @@ module.exports = {
     }
     const embed = new MessageEmbed()
       .setTitle("Help Menu")
-      .setDescription("Here is Help page of 1215 DATA BOT")
+      .setDescription(
+        `**Here is Help page of 1215 DATA BOT**\n__Small information:__ your credits are named "token", they are represented by the following logo: ` +
+          emoji(emo.token)
+      )
       .addFields(
         {
           name: emoji(emo.info) + " Infos",
           value:
-            "`/user` In game info on a user\n`/top` Wallet Stats\n`/buy` Shop of 1215 Kingdom coming ...\n`/kdteam`: kingdom team list \n`/social` Social Network\n\n`[Data_Team_Command]`\n`/helpadmin` Admin commands list",
+            "`/user` In game info on a user\n`/top` Wallet Stats\n`/buy` Shop of 1215 Kingdom coming ...\n`/kdteam`: kingdom team list \n`/social` Social Network\n`/token` See Anana_Token\n\n`[Data_Team_Command]`\n`/helpadmin` Admin commands list",
         },
         {
           name:

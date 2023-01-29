@@ -47,7 +47,7 @@ module.exports = {
             ` __Wallet Power:__ **${valu[0]}**\n` +
             emoji(emo.skull) +
             `__Wallet Kill Power:__ **${valu[1]}**\n` +
-            emoji(emo.gems) +
+            emoji(emo.token) +
             ` __Credits:__ **${valu[2]}**\n` +
             emoji(emo.lohar2) +
             ` __Users Registred:__ **${valu[3]}**`,
@@ -59,7 +59,7 @@ module.exports = {
             ` __Average Power:__ **${valu[4]}**\n` +
             emoji(emo.skull) +
             ` __Average Kill Power:__ **${valu[5]}**\n` +
-            emoji(emo.gems) +
+            emoji(emo.token) +
             ` __Average Credits:__ **${valu[6]}**`,
         }
       );
@@ -90,7 +90,7 @@ module.exports = {
             `🌽 __Wallet Power:__ **${valu[0]}**\n` +
             emoji(emo.skull) +
             `🌽 __Wallet Kill Power:__ **${valu[1]}**\n` +
-            emoji(emo.gems) +
+            emoji(emo.token) +
             `🌽 __Credits:__ **${valu[2]}**\n` +
             emoji(emo.lohar2) +
             `🌽 __Users Registred:__ **${valu[3]}**`,
@@ -102,7 +102,7 @@ module.exports = {
             `🌽 __Average Power:__ **${valu[4]}**\n` +
             emoji(emo.skull) +
             `🌽 __Average Kill Power:__ **${valu[5]}**\n` +
-            emoji(emo.gems) +
+            emoji(emo.token) +
             `🌽 __Average Credits:__ **${valu[6]}**`,
         }
       );

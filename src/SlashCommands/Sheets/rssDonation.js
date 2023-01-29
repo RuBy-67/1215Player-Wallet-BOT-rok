@@ -243,7 +243,8 @@ module.exports = {
           },
         });
         return interaction.reply(
-          `<@${matchingRow1[0]}>, id: [${matchingRow1[3]}]  Credits has been updated successfully ! with **${credits}** credits`
+          `<@${matchingRow1[0]}>, id: [${matchingRow1[3]}]  Credits has been updated successfully ! with **${credits}** ` +
+            emoji(emo.token)
         );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
@@ -282,7 +283,8 @@ module.exports = {
             },
           });
           return interaction.reply(
-            `<@${matchingRow2[0]}>, id: [${matchingRow2[3]}]  Credits for has been updated successfully ! with **${credits}** credits`
+            `<@${matchingRow2[0]}>, id: [${matchingRow2[3]}]  Credits for has been updated successfully ! with **${credits}** ` +
+            emoji(emo.token)
           );
         }
       }

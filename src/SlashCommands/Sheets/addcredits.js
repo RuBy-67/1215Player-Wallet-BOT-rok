@@ -125,7 +125,8 @@ module.exports = {
           },
         });
         return interaction.reply(
-          `User credit of **${IgId}** as been updated with **${credits}** credits`
+          `User credit of **${IgId}** as been updated with **${credits}** ` +
+            emoji(emo.token)
         );
       } else if (rowIndex != -1) {
         const matchingRows = data.filter((row) => row[0] === id);
@@ -164,7 +165,8 @@ module.exports = {
             },
           });
           return interaction.reply(
-            `User credit of <@${id}> as been updated with **${credits}** credits`
+            `User credit of <@${id}> as been updated with **${credits}** ` +
+              emoji(emo.token)
           );
         }
       }
@@ -223,7 +225,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -258,7 +261,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> in ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> in ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -293,7 +297,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -328,7 +333,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -363,7 +369,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits}` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -398,7 +405,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -433,7 +441,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -468,7 +477,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(
@@ -503,7 +513,8 @@ module.exports = {
           },
         });
         interaction.channel.send(
-          `User credit of <@${row[0]}> in ${give} as been updated with ${credits} credits`
+          `User credit of <@${row[0]}> in ${give} as been updated with ${credits} ` +
+            emoji(emo.token)
         );
       }
       return interaction.channel.send(

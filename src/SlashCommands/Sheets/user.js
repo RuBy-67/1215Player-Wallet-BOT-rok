@@ -46,7 +46,7 @@ module.exports = {
                 `\n__Kill:__ **${row[5]}** ` +
                 emoji(emo.skull) +
                 `\n\n__Credits Spent:__ **${row[19]}** :money_with_wings: \n__Credits Penalities:__ **${row[20]}** :warning:\n\n__Current Credits:__ **${row[7]}**` +
-                emoji(emo.bagGems) +
+                emoji(emo.token) +
                 `\n_`,
               inline: true,
             });
@@ -87,7 +87,7 @@ module.exports = {
                 `\n__Kill:__ **${row[5]}** ` +
                 emoji(emo.skull) +
                 `\n__Credits:__ **${row[7]}** ` +
-                emoji(emo.bagGems) +
+                emoji(emo.token) +
                 `\n_`,
               inline: true,
             });
@@ -123,12 +123,10 @@ module.exports = {
               {
                 name: emoji(emo.discord) + " User :",
                 value: `__**ID: **__<@${row[0]}>`,
-                inline: false,
               },
               {
                 name: emoji(emo.books) + " In Game Info :",
                 value: `__InGame Name :__ ${row[2]}\n __Rok Id:__ ${row[1]}`,
-                inline: false,
               },
               {
                 name: "Current Power :",
@@ -138,12 +136,10 @@ module.exports = {
               {
                 name: " Current Kill Power :",
                 value: `${row[5]}. ` + emoji(emo.skull),
-                inline: false,
               },
               {
                 name: emoji(emo.ban) + "Reason of Ban",
                 value: `${row[6]}. `,
-                inline: false,
               }
             );
 

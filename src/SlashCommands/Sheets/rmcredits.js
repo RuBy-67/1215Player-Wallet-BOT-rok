@@ -132,7 +132,9 @@ module.exports = {
               },
             });
             return interaction.reply(
-              `${credits} credit has been deleted from <@${id}> for ${give}`
+              `${credits} ` +
+                emoji(emo.token) +
+                ` has been deleted from <@${id}> for ${give}`
             );
           }
         }
@@ -151,7 +153,9 @@ module.exports = {
             },
           });
           return interaction.reply(
-            `${credits} credit has been deleted from ${IgId} for ${give}`
+            `${credits} ` +
+              emoji(emo.token) +
+              ` has been deleted from ${IgId} for ${give}`
           );
         } else if (rowIndex != -1) {
           const matchingRows = data.filter((row) => row[0] === id);
@@ -190,7 +194,9 @@ module.exports = {
               },
             });
             return interaction.reply(
-              `${credits} credit has been deleted from **<@${id}>** for penalities`
+              `${credits} ` +
+                emoji(emo.token) +
+                ` has been deleted from **<@${id}>** for penalities`
             );
           }
         }
