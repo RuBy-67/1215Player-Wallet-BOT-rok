@@ -12,7 +12,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle("Anana Token")
       .setImage(
-        "https://media.discordapp.net/attachments/643475562333208587/1069273096948826263/1675004963049.png"
+        "https://cdn.discordapp.com/attachments/643475562333208587/1069300758626959370/token.png"
       )
       .setColor("#00FFA5");
 
