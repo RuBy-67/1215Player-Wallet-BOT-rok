@@ -32,7 +32,8 @@ module.exports = {
         },
         {
           name: emoji(emo.tips) + " Tips",
-          value: "`In coming [...]`->`/tips`",
+          value:
+            "`/tips_infantery`: Commander List + Talent tree in infantery\n`/tips_cavalery`: Commander List + Talent tree in cavalery\n`/tips_archery`: Commander List + Talent tree in archery\n`/tips_leadership`: Commander List + Talent tree in leadership\n`/tips_integration`: Commander List + Talent tree in integration",
           inline: true,
         }
       )
@@ -41,7 +42,7 @@ module.exports = {
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
       )
       .setFooter({
-        text: "1215",
+        text: "by RuBy_1215",
         iconURL:
           "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
       })
