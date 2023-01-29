@@ -10,9 +10,9 @@ module.exports = {
       return client.emojis.cache.get(id).toString();
     }
     const embed = new MessageEmbed()
-      .setTitle("Anana Token")
+      .setTitle("Anana Token - 1215")
       .setImage(
-        "https://cdn.discordapp.com/attachments/643475562333208587/1069300758626959370/token.png"
+        "https://media.discordapp.net/attachments/643475562333208587/1069301953919713430/image.png"
       )
       .setColor("#00FFA5");
 
