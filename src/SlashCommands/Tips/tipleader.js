@@ -228,7 +228,7 @@ module.exports = {
       embed.setDescription(
         `Charlemagne is a legendary commander that was part of a reward in the first KVK in Rise of Kingdoms. The only purpose of Charlemagne is to rally city. Unfortunately, Charlemagne by far one of the worst legendary commanders in Rise Of kingdoms.\n\n__Best Pairing :__ \n` +
           emoji(emo.JuliusCaesar) +
-          emoji(emo.HannibalBarca) 
+          emoji(emo.HannibalBarca)
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -427,48 +427,1391 @@ module.exports = {
         }
       );
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "eow") {
+    } else if (com == "hannibal") {
       embed.setColor("#FFDC00");
+      embed.setTitle("Hannibal Barca");
+      embed.setURL("https://www.rok.guide/commanders/Hannibal%20Barca/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070074771057938464/Hannibal-Barca_full-1-291x630.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070075031004127262/hannibal-barca-open-field.png"
+      );
+      embed.setDescription(
+        `Hannibal Barca is a great commander to have on new kingdoms but for old kingdoms he is bad. Hannibal Barca talent tree is designed for a mixed army and attacking city. You can obtain Hannibal Barca only with purchasing chests.\n\n__Best Pairing :__ \n` +
+          emoji(emo.Aethelflaed) +
+          emoji(emo.JuliusCaesar) +
+          emoji(emo.Charlemagne) +
+          emoji(emo.FrederickI) +
+          emoji(emo.MehmedII) +
+          emoji(emo.JoanofArc1)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360343014445137/Hannibal-Barca.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.defense) +
+            `**|** *Defense*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "ctg") {
+    } else if (com == "honda") {
       embed.setColor("#FFDC00");
+      embed.setTitle("Honda Tadakatsu");
+      embed.setURL("https://www.rok.guide/commander/honda-tadakatsu/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360292682809426/honda-tadakatsu.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070077621909594222/honda-tadakatsu-talents-1024x595.png"
+      );
+      embed.setDescription(
+        `Honda Tadakatsu is a new commander with many great abilities, but he requires a lot of rages. Honda Tadakatsu is a commander that is decent for rallies and field battels.\n\nWhat is great about Honda Tadakatsu is that you can use mixed troops with him and probably you will. Now is it worth investing in Honda Tadakatsu? Yes if you are pay to win player but if you are free to play probably not.\n\n__Best Pairing :__ \n` +
+          emoji(emo.Suleiman) +
+          emoji(emo.Trajan)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360292682809426/honda-tadakatsu.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.skill) +
+            `**|** *Skill*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "thut") {
+    } else if (com == "jc") {
       embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "tomirys") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "artemis") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "gil") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "amanitor") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "scipio") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "scipio") {
-      embed.setColor("#C100FF");
+      embed.setTitle("Julius Caesar");
+      embed.setURL("https://www.rok.guide/commanders/julius-caesar/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070078561865707571/Julius-Caesar_full.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070078806020341890/julius-talent-tree-1-1024x576.png"
+      );
+      embed.setDescription(
+        `Julius Caesar is still one of the great legendary commanders in Rise of Kingdoms and with the right talent tree build is used for attacking cities but he is a great tank too. He can be obtained with golden chests so do not use universal sculptures on him.
 
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.Boudica) +
+          emoji(emo.SunTzu) +
+          emoji(emo.Aethelflaed) +
+          emoji(emo.CharlesMartel)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360291567124561/Julius-Caesar.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "lubu") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Lu Bu");
+      embed.setURL("https://www.rok.guide/lu-bu");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360245996007504/lu-bu.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070080834020851732/lu-bu-mixed-troops-talent-build.png"
+      );
+      embed.setDescription(
+        `Lu Bu is a legendary commander that is focused on Leadership and Conquering with nice skill damage. Lu Bu is a commander that was made with collaboration between Rise Of Kingdoms and Dynasty Warriors 9.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.JuliusCaesar) +
+          emoji(emo.HannibalBarca) +
+          emoji(emo.Attila) +
+          emoji(emo.ChandraguptaMaurya1) +
+          emoji(emo.Charlemagne)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360245996007504/lu-bu.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.skill) +
+            `**|** *Skill*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "mehmed") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Mehmed II");
+      embed.setURL("https://www.rok.guide/commanders/mehmed-ii/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070081356077469876/Mehmed_full-1.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070081773091958875/mehmed-ii-openfield-talent-tree-build.png"
+      );
+      embed.setDescription(
+        `Mehmed is a Conquering commander that is designed to destroy cities in Rise Of Kingdoms. You can obtain Mehmed in gold chests. You can use him for field battles but because of Mehmed’s talent tree and skills, he is pure tier S+ commander for rallying cities.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.FrederickI) +
+          emoji(emo.HannibalBarca) +
+          emoji(emo.JuliusCaesar)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360243529756694/Mehmed-II.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.skill) +
+            `**|** *Skill*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "moc") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Moctezuma I");
+      embed.setURL("https://www.rok.guide/moctezuma-i/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360244263764028/moctezuma-i.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070083138572779651/Moctezuma-I-PVE-Skill-Build.png"
+      );
+      embed.setDescription(
+        `Moctezuma I is the perfect commander to destroy or assault any type of PVE structures in KVK or the Lost Kingdom, Camps, Crusader Fortresses, Shrines, Hieron, Pass, Circles, Ziggurat, etc.\n\nEverything will be conquered much easier by using this commander.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.MinamotonoYoshitsune) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.diaochan)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360244263764028/moctezuma-i.png",
+      });
+      embed.setFields({
+        name: "Specialties :",
+        value:
+          "\u200B" +
+          emoji(emo.leadership) +
+          `**|** *Leadership* ` +
+          emoji(emo.peacekeeping) +
+          `**|** *Peacekeeping* ` +
+          emoji(emo.skill) +
+          `**|** *Skill*`,
+      });
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "ragnar") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Ragnar Lodbrok");
+      embed.setURL("https://www.rok.guide/ragnar-lodbrok/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360466129862666/Ragnar-Lodbrok.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070087045533417705/Ragnar-Lodbrok-open-field-mixed-troops.png"
+      );
+      embed.setDescription(
+        `Ragnar Lodbrok is a legendary commander in Rise Of Kingdoms that is specialized in attacking and conquering cities and he is great for PVP. Ragnar Lodbrok’s talent tree is focused on attacking cities.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.Trajan) +
+          emoji(emo.lubu1)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360466129862666/Ragnar-Lodbrok.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "sull") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Sulleiman I");
+      embed.setURL("https://www.rok.guide/commander/suleiman-i/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360197434355792/Suleiman.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070090911977058384/suleiman-rally-build-1024x595.png"
+      );
+      embed.setDescription(
+        `Suleiman is a legendary commander in Rise of Kingdoms who excels at leadership, conquering, and attacking. Suleiman is a commander for pay to win players. If you are a low-spender or a free-to-play player, he is not worthy of your gold sculptures. 
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.Trajan) +
+          emoji(emo.hondatadakatsu)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360197434355792/Suleiman.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "theodora") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Theodora");
+      embed.setURL("https://www.rok.guide/theodora/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070091582189080696/Theodora_full-1.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070091779476553788/theodora-garrison-build-2.png"
+      );
+      embed.setDescription(
+        `Theodora is a legendary commander. She is a very strong commander for defending objectives. Theodora can only be used in kingdoms which have been opened for more than 310 days.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.WuZetian) +
+          emoji(emo.YiSunsin)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360207672660069/Theodora.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.garrison) +
+            `**|** *Garrison* ` +
+            emoji(emo.defense) +
+            `**|** *Defense*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "trajan") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Trajan");
+      embed.setURL("https://www.rok.guide/Trajan");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360098624929895/Trajan.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070093125114134649/trajan-openfield-talent-tree.png"
+      );
+      embed.setDescription(
+        `__Best Pairing :__ \n` +
+          emoji(emo.AlexandertheGreat) +
+          emoji(emo.ConstantineI) +
+          emoji(emo.HannibalBarca) +
+          emoji(emo.lubu1) +
+          emoji(emo.mulan)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360098624929895/Trajan.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatile* ` +
+            emoji(emo.support) +
+            `**|** *Support*`,
+        },
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "wu") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Wu Zetian");
+      embed.setURL("https://www.rok.guide/wu-zetian/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070093704112648303/Wu-Zetian_full-1-354x630.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070094258666745996/wu-zetian-talent-tree-1024x739.png"
+      );
+      embed.setDescription(
+        `Wu Zetian is a type of commander that is good only for pay to win players. Wu Zetian's only role is to defend building nothing else. Very bad commander for field fights.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.ConstantineI) +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.Saladin) +
+          emoji(emo.SunTzu) +
+          emoji(emo.CaoCao) +
+          emoji(emo.KusunokiMasashige) +
+          emoji(emo.ElCid)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360099207938058/Wu-Zetian.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.garrison) +
+            `**|** *Garrison* ` +
+            emoji(emo.support) +
+            `**|** *Support*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "yss") {
+      embed.setColor("#FFDC00");
+       embed.setTitle("Yi Sun Sin");
+       embed.setURL("https://www.rok.guide/yi-sun-sin/");
+       embed.setThumbnail(
+         "https://cdn.discordapp.com/attachments/1069360006908084245/1070095171355680828/Yi-Sun-Sin_full-1.png"
+       );
+       embed.setImage(
+         "https://cdn.discordapp.com/attachments/1069720356379709595/1070095464206184559/yi-sun-sin-alternative-garrison-build.png"
+       );
+       embed.setDescription(
+         `Yi Sun-Sin is a legendary infantry commander that can only be used in kingdoms which have been opened for more than 310 days.
+
+\n\n__Best Pairing :__ \n` +
+           emoji(emo.WuZetian) +
+           emoji(emo.Theodora) 
+       );
+       embed.setAuthor({
+         name: "rok-guide",
+         iconURL:
+           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360100030021712/Yi-Sun-sin.png",
+       });
+       embed.setFields(
+         {
+           name: "Specialties :",
+           value:
+             "\u200B" +
+             emoji(emo.leadership) +
+             `**|** *Leadership* ` +
+             emoji(emo.garrison) +
+             `**|** *Garrison* ` +
+             emoji(emo.defense) +
+             `**|** *Defense*`,
+         },
+         {
+           name: "Overall :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             "*",
+           inline: true,
+         },
+         {
+           name: "Open Field :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             "*",
+           inline: true,
+         },
+         {
+           name: "Rallying Cities :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             "*",
+           inline: true,
+         },
+         {
+           name: "Rallying Object :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             emoji(emo.etoile_vide) +
+             "*",
+           inline: true,
+         },
+         {
+           name: "Defending Cities :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             "*",
+           inline: true,
+         },
+         {
+           name: "Defending Object :",
+           value:
+             "*" +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             emoji(emo.etoile_plein) +
+             "*",
+           inline: true,
+         }
+       );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "osman") {
       embed.setColor("#C100FF");
+      embed.setTitle("Osman I");
+      embed.setURL("https://www.rok.guide/commanders/osman-i/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070085326732808192/Osman_full-1.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070085571160047778/osman-I-open-field-build-1024x640.png"
+      );
+      embed.setDescription(
+        `Osman is a great commander for new players who do not have nuking legendary commanders especially for new servers in Rise Of Kingdoms. Osman Talent Tree is bad for field fights so you will usually use him as a secondary commander.
+
+\n\n__Best Pairing :__ \n` +
+          emoji(emo.SunTzu) +
+          emoji(emo.ScipioAfricanus) +
+          emoji(emo.JoanofArc1)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360245186510878/Osman-I.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.skill) +
+            `**|** *Skill*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "scipio") {
+      embed.setColor("#C100FF");
+      embed.setTitle("Scipio Africanus");
+      embed.setURL("https://www.rok.guide/commanders/scipio-africanus/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070088896534286366/Scipio_full-1-634x630.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070089244384710716/scipio-africanus-talent-tree.png"
+      );
+      embed.setDescription(
+        `__Best Pairing :__ \n` +
+          emoji(emo.JuliusCaesar) +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.EuljiMundeok) +
+          emoji(emo.JoanofArc1) +
+          emoji(emo.OsmanI)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360196939431966/Scipio-Africanus.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.conquering) +
+            `**|** *Conquering* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
       return interaction.reply({ embeds: [embed] });
     } else {
       return interaction.reply("No commander found!");

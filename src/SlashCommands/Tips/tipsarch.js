@@ -1216,7 +1216,7 @@ module.exports = {
       embed.setTitle("Hermann");
       embed.setURL("https://www.rok.guide/commanders/hermann/");
       embed.setThumbnail(
-        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360292447911956/Hermann.png"
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070075913083043981/Hermann_full-1-466x630.png"
       );
       embed.setImage(
         "https://cdn.discordapp.com/attachments/1069720356379709595/1069743540856442880/hermann-open-field-build.png"
@@ -1225,7 +1225,8 @@ module.exports = {
         `Hermann is an archer commander in Rise of Kingdoms. His main strengths include generating rage and reducing the rage of the enemies. His rage engine is extremely strong compared to other commanders, which makes him a powerful choice.\n\n__Best Pairing :__ \n` +
           emoji(emo.ElCid) +
           emoji(emo.YiSeongGye) +
-          emoji(emo.KusunokiMasashige)
+          emoji(emo.KusunokiMasashige) +
+          `\n\n__Video Guide :__\n**[Quick Guide Hermann](https://youtu.be/gQYglqenTM8)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1469,7 +1470,6 @@ module.exports = {
       );
       embed.setDescription(
         `Kusunoki is a powerful commander in Rise of Kingdoms and has some tremendous skills that make him a valuable character in the game. However, what sets him apart from the other commanders is his massive damage potential. His four skills mainly focus on increasing damage and attack, and this means that he is an excellent commander to use on the battlefield. \n\n__Best Pairing :__ \n` +
-          emoji(emo.YiSeongGye) +
           emoji(emo.YiSeongGye) +
           emoji(emo.Hermann)
       );

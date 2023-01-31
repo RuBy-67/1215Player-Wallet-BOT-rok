@@ -35,7 +35,7 @@ module.exports = {
         {
           name: emoji(emo.tips) + " Tips",
           value:
-            "`/tips_infantery`: Commander List + Talent tree in infantery\n`/tips_cavalery`: Commander List + Talent tree in cavalery\n`/tips_archery`: Commander List + Talent tree in archery\n`/tips_leadership`: Commander List + Talent tree in leadership\n`/tips_integration`: Commander List + Talent tree in integration",
+            "`/tips_infantery`: Commander List + Talent tree in infantery\n`/tips_cavalery`: Commander List + Talent tree in cavalery\n`/tips_archery`: Commander List + Talent tree in archery\n`/tips_leadership`: Commander List + Talent tree in leadership\n`/tips_integration`: Commander List + Talent tree in integration\n`/tips_skill`: Tips On best skill ditribution",
           inline: true,
         }
       )
