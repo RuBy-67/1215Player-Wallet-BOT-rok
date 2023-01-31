@@ -91,7 +91,7 @@ module.exports = {
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
     });
 
-    if (com == "ysg") {
+    if (com == "alexandre") {
       embed.setColor("#FFDC00");
       embed.setTitle("Yi-Seong-Gye");
       embed.setURL("https://www.rok.guide/commanders/yi-seong-gye/");
@@ -204,53 +204,50 @@ module.exports = {
         }
       );
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "ramesses") {
+    } else if (com == "charles") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "elcid") {
+    } else if (com == "cheok") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "eow") {
+    } else if (com == "constantin") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "ctg") {
+    } else if (com == "flavius") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "thut") {
+    } else if (com == "guan") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "tomirys") {
+    } else if (com == "harald") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
     } else if (com == "artemis") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "gil") {
+    } else if (com == "pakal") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "amanitor") {
+    } else if (com == "richard") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
+    } else if (com == "sargon") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
+    } else if (com == "scipio") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
+    } else if (com == "tariq") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
+    } else if (com == "zenobia") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "hermann") {
+    } else if (com == "eulji") {
       embed.setColor("#C100FF");
 
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "keira") {
-      embed.setColor("#C100FF");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "imhotep") {
+    } else if (com == "sun") {
       embed.setColor("#C100FF");
       return interaction.reply({ embeds: [embed] });
     } else {
