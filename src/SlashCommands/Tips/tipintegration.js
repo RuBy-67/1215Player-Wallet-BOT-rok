@@ -12,64 +12,44 @@ module.exports = {
       type: "STRING",
       choices: [
         {
-          name: "Yi-Seong-Gye",
-          value: "ysg",
+          name: "Boudica",
+          value: "boudica",
         },
         {
-          name: "Ramesses II",
-          value: "ramesses",
+          name: "Cleopatra VII",
+          value: "cleopatra",
         },
         {
-          name: "El Cid",
-          value: "elcid",
+          name: "Diaochan",
+          value: "diaochan",
         },
         {
-          name: "Edward of Woodstock",
-          value: "eow",
+          name: "Ishida Mitsunari",
+          value: "ishida",
         },
         {
-          name: "Cyrus the Great",
-          value: "ctg",
+          name: "Joan of Arc",
+          value: "joan",
         },
         {
-          name: "Thutmose III",
-          value: "thut",
+          name: "Lohar",
+          value: "lohar",
         },
         {
-          name: "Tomyris",
-          value: "tomirys",
+          name: "Mathilda of Flanders",
+          value: "mathilda",
         },
         {
-          name: "Artemisia I",
-          value: "artemis",
+          name: "Mulan",
+          value: "mulan",
         },
         {
-          name: "Gilgamesh",
-          value: "gil",
+          name: "Queen Tamar of Georgia",
+          value: "tamar",
         },
         {
-          name: "Amanitor",
-          value: "amanitor",
-        },
-        {
-          name: "Henry V",
-          value: "henry",
-        },
-        {
-          name: "Hermann",
-          value: "hermann",
-        },
-        {
-          name: "Keira",
-          value: "keira",
-        },
-        {
-          name: "Imhotep",
-          value: "imhotep",
-        },
-        {
-          name: "Kusunoki Masashige",
-          value: "km",
+          name: "Seondeok",
+          value: "seondeok",
         },
       ],
     },
@@ -209,27 +189,6 @@ module.exports = {
     } else if (com == "eow") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "ctg") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "thut") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "tomirys") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "artemis") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "gil") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "amanitor") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "henry") {
-      embed.setColor("#FFDC00");
-      return interaction.reply({ embeds: [embed] });
     } else if (com == "hermann") {
       embed.setColor("#C100FF");
 
@@ -243,8 +202,13 @@ module.exports = {
     } else if (com == "km") {
       embed.setColor("#C100FF");
       return interaction.reply({ embeds: [embed] });
-    } else {
+    } else if (com == "imhotep") {
       embed.setColor("#C100FF");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "km") {
+      embed.setColor("#C100FF");
+      return interaction.reply({ embeds: [embed] });
+    } else {
       return interaction.reply("No commander found!");
     }
   },

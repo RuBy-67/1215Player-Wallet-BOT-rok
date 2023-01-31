@@ -12,64 +12,72 @@ module.exports = {
       type: "STRING",
       choices: [
         {
-          name: "Yi-Seong-Gye",
-          value: "ysg",
+          name: "Attila",
+          value: "attila",
         },
         {
-          name: "Ramesses II",
-          value: "ramesses",
+          name: "Alexander Nevsky",
+          value: "alexander",
         },
         {
-          name: "El Cid",
-          value: "elcid",
+          name: "Baibars",
+          value: "baibars",
         },
         {
-          name: "Edward of Woodstock",
-          value: "eow",
+          name: "Belisarius",
+          value: "belisarius",
         },
         {
-          name: "Cyrus the Great",
-          value: "ctg",
+          name: "Bertrand du Guesclin",
+          value: "bertrand",
         },
         {
-          name: "Thutmose III",
-          value: "thut",
+          name: "CaoCao",
+          value: "caocao",
         },
         {
-          name: "Tomyris",
-          value: "tomirys",
+          name: "Chandragupta Maurya",
+          value: "chandragupta",
         },
         {
-          name: "Artemisia I",
-          value: "artemis",
+          name: "Genghis Khan",
+          value: "genghis",
         },
         {
-          name: "Gilgamesh",
-          value: "gil",
+          name: "Jadwiga",
+          value: "jadwiga",
         },
         {
-          name: "Amanitor",
-          value: "amanitor",
+          name: "Jan Zizka",
+          value: "jan",
         },
         {
-          name: "Henry V",
-          value: "henry",
+          name: "Joan of arc Prime",
+          value: "joan",
         },
         {
-          name: "Hermann",
-          value: "hermann",
+          name: "Minamoto no Yoshitsune",
+          value: "minamoto",
         },
         {
-          name: "Keira",
-          value: "keira",
+          name: "Pelagius",
+          value: "pelagius",
         },
         {
-          name: "Imhotep",
-          value: "imhotep",
+          name: "Saladin",
+          value: "saladin",
         },
         {
-          name: "Kusunoki Masashige",
-          value: "km",
+          name: "Takeda shingen",
+          value: "takeda",
+        },
+        {
+          name: "William I",
+          value: "william",
+        },
+        {
+          name: "Xiang Yu",
+          value: "xiang",
         },
       ],
     },
@@ -230,6 +238,15 @@ module.exports = {
     } else if (com == "henry") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
     } else if (com == "hermann") {
       embed.setColor("#C100FF");
 
@@ -240,11 +257,7 @@ module.exports = {
     } else if (com == "imhotep") {
       embed.setColor("#C100FF");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "km") {
-      embed.setColor("#C100FF");
-      return interaction.reply({ embeds: [embed] });
     } else {
-      embed.setColor("#C100FF");
       return interaction.reply("No commander found!");
     }
   },

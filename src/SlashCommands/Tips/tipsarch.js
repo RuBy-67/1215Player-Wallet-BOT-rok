@@ -12,44 +12,28 @@ module.exports = {
       type: "STRING",
       choices: [
         {
-          name: "Yi-Seong-Gye",
-          value: "ysg",
-        },
-        {
-          name: "Ramesses II",
-          value: "ramesses",
-        },
-        {
-          name: "El Cid",
-          value: "elcid",
-        },
-        {
-          name: "Edward of Woodstock",
-          value: "eow",
-        },
-        {
-          name: "Cyrus the Great",
-          value: "ctg",
-        },
-        {
-          name: "Thutmose III",
-          value: "thut",
-        },
-        {
-          name: "Tomyris",
-          value: "tomirys",
+          name: "Amanitor",
+          value: "amanitor",
         },
         {
           name: "Artemisia I",
           value: "artemis",
         },
         {
-          name: "Gilgamesh",
-          value: "gil",
+          name: "Cyrus the Great",
+          value: "ctg",
         },
         {
-          name: "Amanitor",
-          value: "amanitor",
+          name: "Edward of Woodstock",
+          value: "eow",
+        },
+        {
+          name: "El Cid",
+          value: "elcid",
+        },
+        {
+          name: "Gilgamesh",
+          value: "gil",
         },
         {
           name: "Henry V",
@@ -60,16 +44,32 @@ module.exports = {
           value: "hermann",
         },
         {
-          name: "Keira",
-          value: "keira",
-        },
-        {
           name: "Imhotep",
           value: "imhotep",
         },
         {
+          name: "Keira",
+          value: "keira",
+        },
+        {
           name: "Kusunoki Masashige",
           value: "km",
+        },
+        {
+          name: "Ramesses II",
+          value: "ramesses",
+        },
+        {
+          name: "Thutmose III",
+          value: "thut",
+        },
+        {
+          name: "Tomyris",
+          value: "tomirys",
+        },
+        {
+          name: "Yi-Seong-Gye",
+          value: "ysg",
         },
       ],
     },

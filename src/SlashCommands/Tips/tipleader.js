@@ -12,64 +12,76 @@ module.exports = {
       type: "STRING",
       choices: [
         {
-          name: "Yi-Seong-Gye",
-          value: "ysg",
+          name: "Æthelflæd",
+          value: "Aethelflaed",
         },
         {
-          name: "Ramesses II",
-          value: "ramesses",
+          name: "Charlemagne",
+          value: "charlemagne",
         },
         {
-          name: "El Cid",
-          value: "elcid",
+          name: "Frederick I",
+          value: "frederick",
         },
         {
-          name: "Edward of Woodstock",
-          value: "eow",
-        },
-        {
-          name: "Cyrus the Great",
-          value: "ctg",
-        },
-        {
-          name: "Thutmose III",
-          value: "thut",
-        },
-        {
-          name: "Tomyris",
-          value: "tomirys",
-        },
-        {
-          name: "Artemisia I",
-          value: "artemis",
-        },
-        {
-          name: "Gilgamesh",
-          value: "gil",
-        },
-        {
-          name: "Amanitor",
-          value: "amanitor",
-        },
-        {
-          name: "Henry V",
-          value: "henry",
+          name: "Hannibal Barca",
+          value: "hannibal",
         },
         {
           name: "Hermann",
           value: "hermann",
         },
         {
-          name: "Keira",
-          value: "keira",
+          name: "Honda Tadakatsu",
+          value: "honda",
         },
         {
-          name: "Imhotep",
-          value: "imhotep",
+          name: "Julius Caesar",
+          value: "jc",
         },
         {
-          name: "Kusunoki Masashige",
-          value: "km",
+          name: "LuBu",
+          value: "lubu",
+        },
+        {
+          name: "Mehmed II",
+          value: "mehmed",
+        },
+        {
+          name: "Moctezuma I",
+          value: "moc",
+        },
+        {
+          name: "Osman I",
+          value: "osman",
+        },
+        {
+          name: "Ragnar Lodbrok",
+          value: "ragnar",
+        },
+        {
+          name: "Scipio Africanus",
+          value: "scipio",
+        },
+        {
+          name: "Sulleiman I",
+          value: "sull",
+        },
+        {
+          name: "Theodora",
+          value: "theodora",
+        },
+        {
+          name: "Trajan",
+          value: "trajan",
+        },
+        {
+          name: "Wu Zetian",
+          value: "wu",
+        },
+        {
+          name: "Yi Sun Sin",
+          value: "yss",
         },
       ],
     },
@@ -230,21 +242,26 @@ module.exports = {
     } else if (com == "henry") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "hermann") {
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "scipio") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "scipio") {
       embed.setColor("#C100FF");
 
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "keira") {
-      embed.setColor("#C100FF");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "imhotep") {
-      embed.setColor("#C100FF");
-      return interaction.reply({ embeds: [embed] });
-    } else if (com == "km") {
+    } else if (com == "osman") {
       embed.setColor("#C100FF");
       return interaction.reply({ embeds: [embed] });
     } else {
-      embed.setColor("#C100FF");
       return interaction.reply("No commander found!");
     }
   },

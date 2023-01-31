@@ -12,64 +12,68 @@ module.exports = {
       type: "STRING",
       choices: [
         {
-          name: "Yi-Seong-Gye",
-          value: "ysg",
+          name: "Alexandre the Great",
+          value: "alexandre",
         },
         {
-          name: "Ramesses II",
-          value: "ramesses",
+          name: "Charles Martel",
+          value: "charles",
         },
         {
-          name: "El Cid",
-          value: "elcid",
+          name: "Cheok Jun-gyeong",
+          value: "cheok",
         },
         {
-          name: "Edward of Woodstock",
-          value: "eow",
+          name: "Constantine I",
+          value: "constantin",
         },
         {
-          name: "Cyrus the Great",
-          value: "ctg",
+          name: "Eulji Mundeok",
+          value: "eulji",
         },
         {
-          name: "Thutmose III",
-          value: "thut",
+          name: "Flavius Aetius",
+          value: "flavius",
         },
         {
-          name: "Tomyris",
-          value: "tomirys",
+          name: "Guan Yu",
+          value: "guan",
         },
         {
-          name: "Artemisia I",
-          value: "artemis",
+          name: "Harald Sigurdssun",
+          value: "harald",
         },
         {
-          name: "Gilgamesh",
-          value: "gil",
+          name: "K'inich Janaab' Pakal",
+          value: "pakal",
         },
         {
-          name: "Amanitor",
-          value: "amanitor",
+          name: "Lenonidas I",
+          value: "leonidas",
         },
         {
-          name: "Henry V",
-          value: "henry",
+          name: "Richard I",
+          value: "richard",
         },
         {
-          name: "Hermann",
-          value: "hermann",
+          name: "Sargon the great",
+          value: "sargon",
         },
         {
-          name: "Keira",
-          value: "keira",
+          name: "Scipio Africanus Prime",
+          value: "scipio",
         },
         {
-          name: "Imhotep",
-          value: "imhotep",
+          name: "Sun Tzu",
+          value: "sun",
         },
         {
-          name: "Kusunoki Masashige",
-          value: "km",
+          name: "Tariq ibn Ziyad",
+          value: "tariq",
+        },
+        {
+          name: "Zenobia",
+          value: "zenobia",
         },
       ],
     },
@@ -230,6 +234,15 @@ module.exports = {
     } else if (com == "henry") {
       embed.setColor("#FFDC00");
       return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "henry") {
+      embed.setColor("#FFDC00");
+      return interaction.reply({ embeds: [embed] });
     } else if (com == "hermann") {
       embed.setColor("#C100FF");
 
@@ -240,11 +253,7 @@ module.exports = {
     } else if (com == "imhotep") {
       embed.setColor("#C100FF");
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "km") {
-      embed.setColor("#C100FF");
-      return interaction.reply({ embeds: [embed] });
     } else {
-      embed.setColor("#C100FF");
       return interaction.reply("No commander found!");
     }
   },
