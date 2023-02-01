@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed, Message } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
@@ -62,6 +62,11 @@ module.exports = {
 
     const com = await interaction.options.getString("commanders");
     const embed = new MessageEmbed().setTimestamp().setFooter({
+      text: "Kd 1215",
+      iconURL:
+        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+    });
+    const embed2 = new MessageEmbed().setTimestamp().setFooter({
       text: "Kd 1215",
       iconURL:
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
@@ -466,7 +471,11 @@ module.exports = {
         }
       );
 
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#C100FF");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070433028335222894/joan-of-arc-support-build-1024x578.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "lohar") {
       embed.setColor("#C100FF");
       embed.setTitle("Lohar");
@@ -699,7 +708,8 @@ module.exports = {
           emoji(emo.RichardI) +
           emoji(emo.Saladin) +
           emoji(emo.ConstantineI) +
-          emoji(emo.CharlesMartel)
+          emoji(emo.CharlesMartel) +
+          `__Video Guide :__\n>>> **[Mulan Guides](https://youtu.be/iQ_KweClWvU)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -898,7 +908,9 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+       embed2.setColor("");
+       embed2.setImage("");
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "seondeok") {
       embed.setColor("#FFDC00");
       embed.setTitle("Seondeok");
@@ -921,21 +933,22 @@ module.exports = {
         iconURL:
           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360197165912174/Seondeok_1.png",
       });
-      embed.setFields(
-        {
-          name: "Specialties :",
-          value:
-            "\u200B" +
-            emoji(emo.integration) +
-            `**|** *Integration* ` +
-            emoji(emo.gathering) +
-            `**|** *Gathering* ` +
-            emoji(emo.attack) +
-            `**|** *Attack*`,
-        },
-       
+      embed.setFields({
+        name: "Specialties :",
+        value:
+          "\u200B" +
+          emoji(emo.integration) +
+          `**|** *Integration* ` +
+          emoji(emo.gathering) +
+          `**|** *Gathering* ` +
+          emoji(emo.attack) +
+          `**|** *Attack*`,
+      });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070427551996051516/seondeok-farming-talent-build-level-60.png"
       );
-      return interaction.reply({ embeds: [embed] });
+      return interaction.reply({ embeds: [embed, embed2] });
     } else {
       return interaction.reply("No commander found!");
     }

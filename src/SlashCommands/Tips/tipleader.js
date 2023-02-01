@@ -98,6 +98,16 @@ module.exports = {
       iconURL:
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
     });
+    const embed2 = new MessageEmbed().setTimestamp().setFooter({
+      text: "Kd 1215",
+      iconURL:
+        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+    });
+    const embed3 = new MessageEmbed().setTimestamp().setFooter({
+      text: "Kd 1215",
+      iconURL:
+        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+    });
 
     if (com == "Aethelflaed") {
       embed.setColor("#FFDC00");
@@ -122,7 +132,7 @@ module.exports = {
           emoji(emo.Baibars) +
           emoji(emo.AlexandertheGreat) +
           emoji(emo.Belisarius) +
-          `__Video Guide :__\n>>> [Guide Free commander](https://youtu.be/FrT0Kao_p-A)`
+          `__Video Guide :__\n>>> **[Guide Free commander](https://youtu.be/FrT0Kao_p-A)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -214,7 +224,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070433389292834826/aethelflaed-specific-troops-talent-tree.png"
+      );
+      embed3.setColor("#FFDC00");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070433411224850543/aethelflaed-farming-talent-tree.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2,embed3] });
     } else if (com == "charlemagne") {
       embed.setColor("#FFDC00");
       embed.setTitle("Charlemagne");
@@ -320,7 +338,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070434096632844418/charlemagne-rally-build-conquering-talents.png"
+      );
+      embed3.setColor("#FFDC00");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070434127385464852/charlemagne-rally-build-skill.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "frederick") {
       embed.setColor("#FFDC00");
       embed.setTitle("Frederick I");
@@ -426,7 +452,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+       embed2.setColor("#FFDC00");
+       embed2.setImage(
+         "https://cdn.discordapp.com/attachments/1069720356379709595/1070434417111207976/Frederick-I-Rally-Build-Conquering.png"
+       );
+       embed3.setColor("#FFDC00");
+       embed3.setImage(
+         "https://cdn.discordapp.com/attachments/1069720356379709595/1070434439466856458/Frederick-I-Rally-Build-Skill.png"
+       );
+       return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "hannibal") {
       embed.setColor("#FFDC00");
       embed.setTitle("Hannibal Barca");
@@ -536,7 +570,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070434724461416560/hannibal-barca-rally-build.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "honda") {
       embed.setColor("#FFDC00");
       embed.setTitle("Honda Tadakatsu");
@@ -863,7 +901,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070435160622891069/lu-bu-conquering-talent-build.png"
+      );
+      embed3.setColor("#FFDC00");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070435191572664453/lu-bu-skill-talent-build.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "mehmed") {
       embed.setColor("#FFDC00");
       embed.setTitle("Mehmed II");
@@ -1008,7 +1054,11 @@ module.exports = {
           emoji(emo.skill) +
           `**|** *Skill*`,
       });
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070435526823387146/Moctezuma-I-PVE-Peacekeeping-Build.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "ragnar") {
       embed.setColor("#FFDC00");
       embed.setTitle("Ragnar Lodbrok");
@@ -1117,7 +1167,11 @@ module.exports = {
         }
       );
 
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070435818705002507/Ragnar-Lodbrok-rally-build-mixed-troops.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "sull") {
       embed.setColor("#FFDC00");
       embed.setTitle("Sulleiman I");
@@ -1226,7 +1280,11 @@ module.exports = {
         }
       );
 
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070436114898370650/suleiman-openfield-build-1024x595.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "theodora") {
       embed.setColor("#FFDC00");
       embed.setTitle("Theodora");
@@ -1334,7 +1392,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070436344045777026/theodora-garrison-build.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "trajan") {
       embed.setColor("#FFDC00");
       embed.setTitle("Trajan");
@@ -1485,7 +1547,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070436608970596392/wu-zetian-talent-tree-open-field-1024x650.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "yss") {
       embed.setColor("#FFDC00");
        embed.setTitle("Yi Sun Sin");
@@ -1593,7 +1659,11 @@ module.exports = {
            inline: true,
          }
        );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070436755959972021/yi-sun-sin-garrison-build-2.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "osman") {
       embed.setColor("#C100FF");
       embed.setTitle("Osman I");

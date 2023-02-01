@@ -86,6 +86,16 @@ module.exports = {
       iconURL:
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
     });
+    const embed2 = new MessageEmbed().setTimestamp().setFooter({
+      text: "Kd 1215",
+      iconURL:
+        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+    });
+    const embed3 = new MessageEmbed().setTimestamp().setFooter({
+      text: "Kd 1215",
+      iconURL:
+        "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
+    });
 
     if (com == "ysg") {
       embed.setColor("#FFDC00");
@@ -200,7 +210,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070437353484726292/Yi-Seong-Gye-Rally-Build-scaled.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "ramesses") {
       embed.setColor("#FFDC00");
       embed.setTitle("Ramesses II");
@@ -420,7 +434,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070437621240696843/el_cid_open_field_2_talents.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "eow") {
       embed.setColor("#FFDC00");
       embed.setTitle("Edward of Woodstock");
@@ -528,7 +546,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070437813771833375/edward-of-woodstock-rally-talent-tree.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "ctg") {
       embed.setColor("#FFDC00");
       embed.setTitle("Cyrus the Great");
@@ -636,7 +658,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+     embed2.setColor("#FFDC00");
+     embed2.setImage(
+       "https://cdn.discordapp.com/attachments/1069720356379709595/1070437929144561724/cyrus-open-field-archer-talent-tree.png"
+     );
+     return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "thut") {
       embed.setColor("#FFDC00");
       embed.setTitle("Thutmose III");
@@ -962,7 +988,11 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070438144056504411/artemisia-garrison-talent-tree.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "gil") {
       embed.setColor("#FFDC00");
       embed.setTitle("Gilgamesh");
@@ -1070,7 +1100,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070438549842821251/Gilgamesh-Rally-Build.png"
+      );
+      embed3.setColor("#FFDC00");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070438571435118742/gilgamesh-Open-field-and-Rally-Builld-archer.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "amanitor") {
       embed.setColor("#FFDC00");
       embed.setTitle("Amanitor");
@@ -1353,7 +1391,15 @@ module.exports = {
           inline: true,
         }
       );
-      return interaction.reply({ embeds: [embed] });
+      embed2.setColor("#C100FF");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070438969281626232/keira-peacekeeing-talent-tree-build.png"
+      );
+      embed3.setColor("#C100FF");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070438999581266020/keira-archer-talent-tree.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "imhotep") {
       embed.setColor("#C100FF");
       embed.setTitle("Imhotep");
