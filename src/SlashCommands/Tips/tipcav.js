@@ -220,1812 +220,1812 @@ module.exports = {
       return interaction.reply({ embeds: [embed] });
     } else if (com == "alexander") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "bertrand") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "caocao") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "chandragupta") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "genghis") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "jadwiga") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "artemis") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "jan") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "minamoto") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "saladin") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "takeda") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "william") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "xiang") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "baibars") {
       embed.setColor("#C100FF");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#C100FF");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#C100FF");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
 
       return interaction.reply({ embeds: [embed] });
     } else if (com == "belisarius") {
       embed.setColor("#C100FF");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#C100FF");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#C100FF");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else if (com == "pelagius") {
       embed.setColor("#C100FF");
-       embed.setTitle("Alexander the Great");
-       embed.setURL("https://www.rok.guide/alexander-the-great/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
-       );
-       embed.setDescription(
-         `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
-           emoji(emo.CharlesMartel) +
-           emoji(emo.RichardI) +
-           emoji(emo.guan) +
-           emoji(emo.YiSeongGye) +
-           emoji(emo.EuljiMundeok)
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.infantry) +
-             `**|** *Infantry* ` +
-             emoji(emo.vesatility) +
-             `**|** *Versatility* ` +
-             emoji(emo.attack) +
-             `**|** *Attack*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         }
-       );
-       embed2.setColor("#C100FF");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
-       );
+      embed.setTitle("Alexander the Great");
+      embed.setURL("https://www.rok.guide/alexander-the-great/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070447857825501328/alexander-rise-of-kingdoms-181x300.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448788914835539/alexander_open_field_talents.png"
+      );
+      embed.setDescription(
+        `Alexander the Great is one of the best infantry commander in the Rise of Kingdoms. He will bring an insane amount of damage and defense to infantry troops while supporting other troops with damage absorbing shield. Alexander is a commander that you must have.\n\n__Best Pairing :__ \n` +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.RichardI) +
+          emoji(emo.guan) +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.EuljiMundeok)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450401214554/Alexander-the-Great.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.infantry) +
+            `**|** *Infantry* ` +
+            emoji(emo.vesatility) +
+            `**|** *Versatility* ` +
+            emoji(emo.attack) +
+            `**|** *Attack*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      embed2.setColor("#C100FF");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070448983257919498/image.png"
+      );
       return interaction.reply({ embeds: [embed] });
     } else {
       return interaction.reply("No commander found!");
