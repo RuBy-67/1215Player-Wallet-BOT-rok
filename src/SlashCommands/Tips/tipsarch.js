@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "tips_archery",
-  description: "Archery Commander Tips / Talent tree",
+  description: "Commander List + Talent tree in archery",
   options: [
     {
       name: "commanders",
@@ -12,12 +12,20 @@ module.exports = {
       type: "STRING",
       choices: [
         {
+          name: "Resume pairing",
+          value: "resume",
+        },
+        {
           name: "Amanitor",
           value: "amanitor",
         },
         {
           name: "Artemisia I",
           value: "artemis",
+        },
+        {
+          name: "Boudica Prime",
+          value: "bp",
         },
         {
           name: "Cyrus the Great",
@@ -658,11 +666,11 @@ module.exports = {
           inline: true,
         }
       );
-     embed2.setColor("#FFDC00");
-     embed2.setImage(
-       "https://cdn.discordapp.com/attachments/1069720356379709595/1070437929144561724/cyrus-open-field-archer-talent-tree.png"
-     );
-     return interaction.reply({ embeds: [embed, embed2] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070437929144561724/cyrus-open-field-archer-talent-tree.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "thut") {
       embed.setColor("#FFDC00");
       embed.setTitle("Thutmose III");
@@ -1249,6 +1257,41 @@ module.exports = {
           `**|** *Support*`,
       });
       return interaction.reply({ embeds: [embed] });
+    } else if (com == "bp") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Boudica Prime");
+      embed.setURL("https://www.rok.guide/commander/boudica-p/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360447939162263/1675020817189.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070822322262515812/image.png"
+      );
+      embed.setDescription(
+        `__Best Pairing :__ \n` +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.henryvavatar) +
+          emoji(emo.NebuchadnezzarII) +
+          emoji(emo.ArtemisiaI11) +
+          emoji(emo.hondatadakatsu)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1070821238898966588/Boudica-avatar.png",
+      });
+      embed.setFields({
+        name: "Specialties :",
+        value:
+          "\u200B" +
+          emoji(emo.archer) +
+          `**|** *Archery* ` +
+          emoji(emo.vesatility) +
+          `**|** *Versatile* ` +
+          emoji(emo.skill) +
+          `**|** *Skill*`,
+      });
+      return interaction.reply({ embeds: [embed] });
     } else if (com == "hermann") {
       embed.setColor("#C100FF");
       embed.setTitle("Hermann");
@@ -1609,6 +1652,90 @@ module.exports = {
           inline: true,
         }
       );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "resume") {
+      embed.setTitle("Best Archery Commander Pairs");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069734738799116418/Tomyris_full-1-367x630.png"
+      );
+      embed.setDescription(
+        emoji(emo.NebuchadnezzarII) +
+          " *x* " +
+          emoji(emo.cyrusthegreat) +
+          " / " +
+          emoji(emo.amanitor) +
+          emoji(emo.YiSeongGye) +
+          "\n" +
+          emoji(emo.amanitor) +
+          " *x* " +
+          emoji(emo.ArtemisiaI11) +
+          " / " +
+          emoji(emo.NebuchadnezzarII) +
+          emoji(emo.cyrusthegreat) +
+          "\n" +
+          emoji(emo.gilmagesh) +
+          " *x* " +
+          emoji(emo.cyrusthegreat) +
+          " / " +
+          emoji(emo.NebuchadnezzarII) +
+          emoji(emo.amanitor) +
+          "\n" +
+          emoji(emo.YiSeongGye) +
+          " *x* " +
+          emoji(emo.RamessesII1) +
+          " / " +
+          emoji(emo.Hermann) +
+          emoji(emo.RichardI) +
+          "\n" +
+          emoji(emo.Hermann) +
+          " *x* " +
+          emoji(emo.YiSeongGye) +
+          " / " +
+          emoji(emo.KusunokiMasashige) +
+          emoji(emo.ElCid) +
+          "\n" +
+          emoji(emo.KusunokiMasashige) +
+          " *x* " +
+          emoji(emo.YiSeongGye) +
+          " / " +
+          emoji(emo.Hermann) +
+          "\n" +
+          emoji(emo.ElCid) +
+          " *x* " +
+          emoji(emo.ArtemisiaI11) +
+          " / " +
+          emoji(emo.Hermann) +
+          emoji(emo.YiSeongGye) +
+          "\n" +
+          emoji(emo.ArtemisiaI11) +
+          " *x* " +
+          emoji(emo.ElCid) +
+          " / " +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.Hermann) +
+          "\n" +
+          emoji(emo.RamessesII1) +
+          " *x* " +
+          emoji(emo.ArtemisiaI11) +
+          " / " +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.Hermann) +
+          "\n" +
+          emoji(emo.EdwardofWoodstock) +
+          " *x* " +
+          emoji(emo.Tomyris) +
+          " / " +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.RamessesII1) +
+          "\n" +
+          emoji(emo.cyrusthegreat) +
+          " *x* " +
+          emoji(emo.NebuchadnezzarII) +
+          " / " +
+          emoji(emo.amanitor) +
+          emoji(emo.YiSeongGye)
+      );
+      embed.setColor("#F70505");
       return interaction.reply({ embeds: [embed] });
     } else {
       return interaction.reply("No commander found!");

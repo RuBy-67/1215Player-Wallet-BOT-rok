@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "tips_leadership",
-  description: "top stats of 1215 Wallet `",
+  description: "Commander List + Talent tree in leadership",
   options: [
     {
       name: "commanders",
@@ -232,7 +232,7 @@ module.exports = {
       embed3.setImage(
         "https://cdn.discordapp.com/attachments/1069720356379709595/1070433411224850543/aethelflaed-farming-talent-tree.png"
       );
-      return interaction.reply({ embeds: [embed, embed2,embed3] });
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "charlemagne") {
       embed.setColor("#FFDC00");
       embed.setTitle("Charlemagne");
@@ -452,15 +452,15 @@ module.exports = {
           inline: true,
         }
       );
-       embed2.setColor("#FFDC00");
-       embed2.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070434417111207976/Frederick-I-Rally-Build-Conquering.png"
-       );
-       embed3.setColor("#FFDC00");
-       embed3.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070434439466856458/Frederick-I-Rally-Build-Skill.png"
-       );
-       return interaction.reply({ embeds: [embed, embed2, embed3] });
+      embed2.setColor("#FFDC00");
+      embed2.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070434417111207976/Frederick-I-Rally-Build-Conquering.png"
+      );
+      embed3.setColor("#FFDC00");
+      embed3.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070434439466856458/Frederick-I-Rally-Build-Skill.png"
+      );
+      return interaction.reply({ embeds: [embed, embed2, embed3] });
     } else if (com == "hannibal") {
       embed.setColor("#FFDC00");
       embed.setTitle("Hannibal Barca");
@@ -921,7 +921,7 @@ module.exports = {
         "https://cdn.discordapp.com/attachments/1069720356379709595/1070081773091958875/mehmed-ii-openfield-talent-tree-build.png"
       );
       embed.setDescription(
-        `Mehmed is a Conquering commander that is designed to destroy cities in Rise Of Kingdoms. You can obtain Mehmed in gold chests. You can use him for field battles but because of Mehmed’s talent tree and skills, he is pure tier S+ commander for rallying cities.
+        `Mehmed is a Conquering commander that is designed to destroy cities in Rise Of Kingdoms. You can obtain Mehmed in gold chests. You can use him for field battles but because of Mehmed's talent tree and skills, he is pure tier S+ commander for rallying cities.
 
 \n\n__Best Pairing :__ \n` +
           emoji(emo.FrederickI) +
@@ -1420,19 +1420,17 @@ module.exports = {
         iconURL:
           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360098624929895/Trajan.png",
       });
-      embed.setFields(
-        {
-          name: "Specialties :",
-          value:
-            "\u200B" +
-            emoji(emo.leadership) +
-            `**|** *Leadership* ` +
-            emoji(emo.vesatility) +
-            `**|** *Versatile* ` +
-            emoji(emo.support) +
-            `**|** *Support*`,
-        },
-      );
+      embed.setFields({
+        name: "Specialties :",
+        value:
+          "\u200B" +
+          emoji(emo.leadership) +
+          `**|** *Leadership* ` +
+          emoji(emo.vesatility) +
+          `**|** *Versatile* ` +
+          emoji(emo.support) +
+          `**|** *Support*`,
+      });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "wu") {
       embed.setColor("#FFDC00");
@@ -1554,111 +1552,111 @@ module.exports = {
       return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "yss") {
       embed.setColor("#FFDC00");
-       embed.setTitle("Yi Sun Sin");
-       embed.setURL("https://www.rok.guide/yi-sun-sin/");
-       embed.setThumbnail(
-         "https://cdn.discordapp.com/attachments/1069360006908084245/1070095171355680828/Yi-Sun-Sin_full-1.png"
-       );
-       embed.setImage(
-         "https://cdn.discordapp.com/attachments/1069720356379709595/1070095464206184559/yi-sun-sin-alternative-garrison-build.png"
-       );
-       embed.setDescription(
-         `Yi Sun-Sin is a legendary infantry commander that can only be used in kingdoms which have been opened for more than 310 days.
+      embed.setTitle("Yi Sun Sin");
+      embed.setURL("https://www.rok.guide/yi-sun-sin/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070095171355680828/Yi-Sun-Sin_full-1.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070095464206184559/yi-sun-sin-alternative-garrison-build.png"
+      );
+      embed.setDescription(
+        `Yi Sun-Sin is a legendary infantry commander that can only be used in kingdoms which have been opened for more than 310 days.
 
 \n\n__Best Pairing :__ \n` +
-           emoji(emo.WuZetian) +
-           emoji(emo.Theodora) 
-       );
-       embed.setAuthor({
-         name: "rok-guide",
-         iconURL:
-           "https://cdn.discordapp.com/attachments/1069360006908084245/1069360100030021712/Yi-Sun-sin.png",
-       });
-       embed.setFields(
-         {
-           name: "Specialties :",
-           value:
-             "\u200B" +
-             emoji(emo.leadership) +
-             `**|** *Leadership* ` +
-             emoji(emo.garrison) +
-             `**|** *Garrison* ` +
-             emoji(emo.defense) +
-             `**|** *Defense*`,
-         },
-         {
-           name: "Overall :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Open Field :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Rallying Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             emoji(emo.etoile_vide) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Cities :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         },
-         {
-           name: "Defending Object :",
-           value:
-             "*" +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             emoji(emo.etoile_plein) +
-             "*",
-           inline: true,
-         }
-       );
+          emoji(emo.WuZetian) +
+          emoji(emo.Theodora)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360100030021712/Yi-Sun-sin.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.leadership) +
+            `**|** *Leadership* ` +
+            emoji(emo.garrison) +
+            `**|** *Garrison* ` +
+            emoji(emo.defense) +
+            `**|** *Defense*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        }
+      );
       embed2.setColor("#FFDC00");
       embed2.setImage(
         "https://cdn.discordapp.com/attachments/1069720356379709595/1070436755959972021/yi-sun-sin-garrison-build-2.png"

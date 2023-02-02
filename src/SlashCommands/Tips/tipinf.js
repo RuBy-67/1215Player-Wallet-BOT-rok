@@ -2,8 +2,8 @@ const { MessageEmbed } = require("discord.js");
 const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
-  name: "tips_infantery",
-  description: "top stats of 1215 Wallet `",
+  name: "tips_infantry",
+  description: "Commander List + Talent tree in infantry",
   options: [
     {
       name: "commanders",
@@ -11,6 +11,10 @@ module.exports = {
       required: true,
       type: "STRING",
       choices: [
+        {
+          name: "Resume pairing",
+          value: "resume",
+        },
         {
           name: "Alexander the Great",
           value: "alexandre",
@@ -1678,6 +1682,104 @@ module.exports = {
         "https://cdn.discordapp.com/attachments/1069720356379709595/1070476884749598751/sun-tzu-infantry-talent-tree.png"
       );
       return interaction.reply({ embeds: [embed, embed2, embed3] });
+    } else if (com == "resume") {
+      embed.setTitle("Best Infantry Commander Pairs");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1070461942252179548/richard-i-259x300.png"
+      );
+      embed.setDescription(
+        emoji(emo.HaraldSigurdsson1) +
+          " *x* " +
+          emoji(emo.AlexandertheGreat) +
+          " / " +
+          emoji(emo.CharlesMartel) +
+          emoji(emo.ConstantineI) +
+          "\n" +
+          emoji(emo.SunTzu) +
+          " *x* " +
+          emoji(emo.RichardI) +
+          " / " +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.Aethelflaed) +
+          "\n" +
+          emoji(emo.RichardI) +
+          " *x* " +
+          emoji(emo.CharlesMartel) +
+          " / " +
+          emoji(emo.AlexandertheGreat) +
+          emoji(emo.ConstantineI) +
+          "\n" +
+          emoji(emo.CharlesMartel) +
+          " *x* " +
+          emoji(emo.RichardI) +
+          " / " +
+          emoji(emo.ConstantineI) +
+          emoji(emo.SunTzu) +
+          "\n" +
+          emoji(emo.AlexandertheGreat) +
+          " *x* " +
+          emoji(emo.CharlesMartel) +
+          " / " +
+          emoji(emo.YiSeongGye) +
+          emoji(emo.RichardI) +
+          "\n" +
+          emoji(emo.ConstantineI) +
+          " *x* " +
+          emoji(emo.CharlesMartel) +
+          " / " +
+          emoji(emo.AlexandertheGreat) +
+          emoji(emo.RichardI) +
+          "\n" +
+          emoji(emo.guan) +
+          " *x* " +
+          emoji(emo.AlexandertheGreat) +
+          " / " +
+          emoji(emo.CheokJungyeong137x300) +
+          emoji(emo.SunTzu) +
+          "\n" +
+          emoji(emo.LeonidasI) +
+          " *x* " +
+          emoji(emo.CharlesMartel) +
+          " / " +
+          emoji(emo.AlexandertheGreat) +
+          emoji(emo.RichardI) +
+          "\n" +
+          emoji(emo.pakal) +
+          " *x* " +
+          emoji(emo.CheokJungyeong137x300) +
+          " / " +
+          emoji(emo.guan) +
+          emoji(emo.SunTzu) +
+          "\n" +
+          emoji(emo.hondatadakatsu) +
+          " *x* " +
+          emoji(emo.Suleiman) +
+          " / " +
+          emoji(emo.Trajan) +
+          "\n" +
+          emoji(emo.Trajan) +
+          " *x* " +
+          emoji(emo.hondatadakatsu) +
+          " / " +
+          emoji(emo.HaraldSigurdsson1) +
+          emoji(emo.CharlesMartel) +
+          "\n" +
+          emoji(emo.cipioprime) +
+          " *x* " +
+          emoji(emo.guan) +
+          " / " +
+          emoji(emo.HaraldSigurdsson1) +
+          emoji(emo.AlexandertheGreat) +
+          "\n" +
+          emoji(emo.flaviusaetius) +
+          " *x* " +
+          emoji(emo.Zenobia1) +
+          " / " +
+          emoji(emo.cipioprime) +
+          emoji(emo.guan)
+      );
+      embed.setColor("#F70505");
+      return interaction.reply({ embeds: [embed] });
     } else {
       return interaction.reply("No commander found!");
     }

@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "tips_integration",
-  description: "top stats of 1215 Wallet `",
+  description: "Commander List + Talent tree in integration",
   options: [
     {
       name: "commanders",
@@ -908,8 +908,8 @@ module.exports = {
           inline: true,
         }
       );
-       embed2.setColor("");
-       embed2.setImage("");
+      embed2.setColor("");
+      embed2.setImage("");
       return interaction.reply({ embeds: [embed, embed2] });
     } else if (com == "seondeok") {
       embed.setColor("#FFDC00");
