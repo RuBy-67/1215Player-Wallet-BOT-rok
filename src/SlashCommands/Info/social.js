@@ -18,11 +18,11 @@ module.exports = {
           emoji(emo.Twitter) +
           `** | [@ruben_bey67](https://twitter.com/ruben_bey67)**\n➼ ` +
           emoji(emo.discord) +
-          `** |** <@375590278880428034>`
+          `** |** <@375590278880428034>\n\n *Write me if you see any update to do in bot*`
       )
       .setColor("#3135D8")
       .setThumbnail(
-        "https://cdn.discordapp.com/avatars/375590278880428034/6c3bb7adecda83c484564b4c6cadd699.png?size=1024"
+        "https://cdn.discordapp.com/attachments/1071177069985284292/1071188896139984936/DALLE_2023-01-21_23.20.43.png"
       );
 
     return interaction.reply({ embeds: [embed] });
