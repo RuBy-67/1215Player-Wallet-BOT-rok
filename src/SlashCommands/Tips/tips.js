@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "tips",
-  description: "test",
+  description: "commander",
   options: [
     {
       type: 1,
