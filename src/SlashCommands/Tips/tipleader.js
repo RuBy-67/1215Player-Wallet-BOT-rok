@@ -145,11 +145,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeper* ` +
+            `  *Peacekeeper* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -259,11 +259,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -373,11 +373,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -491,11 +491,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -601,11 +601,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -711,11 +711,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -822,11 +822,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -939,11 +939,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -1048,11 +1048,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.leadership) +
-          `**|** *Leadership* ` +
+          `  *Leadership* ` +
           emoji(emo.peacekeeping) +
-          `**|** *Peacekeeping* ` +
+          `  *Peacekeeping* ` +
           emoji(emo.skill) +
-          `**|** *Skill*`,
+          `  *Skill*`,
       });
       embed2.setColor("#FFDC00");
       embed2.setImage(
@@ -1087,11 +1087,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -1200,11 +1200,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -1313,11 +1313,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -1425,11 +1425,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.leadership) +
-          `**|** *Leadership* ` +
+          `  *Leadership* ` +
           emoji(emo.vesatility) +
-          `**|** *Versatile* ` +
+          `  *Versatile* ` +
           emoji(emo.support) +
-          `**|** *Support*`,
+          `  *Support*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "wu") {
@@ -1466,11 +1466,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1578,11 +1578,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -1691,11 +1691,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -1801,11 +1801,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.leadership) +
-            `**|** *Leadership* ` +
+            `  *Leadership* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",

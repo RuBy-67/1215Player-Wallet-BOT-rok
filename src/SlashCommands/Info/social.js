@@ -18,7 +18,7 @@ module.exports = {
           emoji(emo.Twitter) +
           `** | [@ruben_bey67](https://twitter.com/ruben_bey67)**\n➼ ` +
           emoji(emo.discord) +
-          `** |** <@375590278880428034>\n\n *Write me if you see any update to do in bot*`
+          `** |** <@375590278880428034>\n\n *Write me if you need any update in bot*`
       )
       .setColor("#3135D8")
       .setThumbnail(

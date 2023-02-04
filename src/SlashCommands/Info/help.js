@@ -19,9 +19,9 @@ module.exports = {
         {
           name: emoji(emo.info) + " Infos",
           value:
-            `\`/user\` In game info on a user\n\`/top\` Wallet Stats\n\`/buy\` Shop of 1215 Kingdom coming ...\n\`/kdteam\`: kingdom team list \n\`/social\` Social Network\n\`/token\` See Anana_Token\n\n` +
+            `\`/user\` In game info on a user\n\`/top\` Wallet Stats\n\`/buy\` Shop of 1215 Kingdom \n\n\`/kdteam\`: Kingdom team list\n\`/token\` See credit Anana_Token\n\`/social\` Social Network\n\n` +
             emoji(emo.police) +
-            `**Data_Team_Command**\n\`/helpadmin\` Admin commands list`,
+            ` **Data_Team_Command**\n\`/helpadmin\` Admin commands list`,
         },
         {
           name:
@@ -35,7 +35,7 @@ module.exports = {
         {
           name: emoji(emo.tips) + " Tips",
           value:
-            "`/tips_infantry`: Commander List + Talent tree in infantry\n`/tips_cavalry`: Commander List + Talent tree in cavalry\n`/tips_archery`: Commander List + Talent tree in archery\n`/tips_leadership`: Commander List + Talent tree in leadership\n`/tips_integration`: Commander List + Talent tree in integration\n`/tips_skill`: Tips On best skill ditribution\n`/tips_civilisation`: Tips On civilisation choices",
+            "Commander List + Talent tree :\n`/tips_infantry`\n`/tips_cavalry`\n`/tips_archery`\n`/tips_leadership`\n`/tips_integration`\n\n`/tips_skill`: Tips on best skill ditribution\n`/tips_civilisation`: Tips on civilisation",
           inline: true,
         }
       )
@@ -44,7 +44,7 @@ module.exports = {
         "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905"
       )
       .setFooter({
-        text: "by RuBy_1215",
+        text: "RuBy_1215",
         iconURL:
           "https://media.discordapp.net/attachments/1057030746105200650/1057034989918761041/DALLE_2022-12-15_21.11.27_-_digital_art_of_pineaple_with_solar_glass.png?width=905&height=905",
       })

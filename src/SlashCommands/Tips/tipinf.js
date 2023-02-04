@@ -135,11 +135,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -250,11 +250,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -348,7 +348,9 @@ module.exports = {
         `Cheok Jun-Gyeong is a Legendary infantry commander that came with an update March of the Ages. Cheok Jun-Gyeong is a great commander to have, especially if you focus on infantry commanders. The great thing about this commander is that you can use him for field fighting and rallying. \n\n__Best Pairing :__ \n` +
           emoji(emo.AlexandertheGreat) +
           emoji(emo.guan) +
-          `\n\n__Videos Guides :__ \n>>> [Cheok meta ?](https://youtu.be/uTb5QOQaLVc)\n[Pakal x Cheok](https://youtu.be/Cg1gYr_JUpE)`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Videos Guides :__ \n>>> [Cheok meta ?](https://youtu.be/uTb5QOQaLVc)\n[Pakal x Cheok](https://youtu.be/Cg1gYr_JUpE)`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -361,11 +363,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -468,11 +470,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -580,11 +582,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -695,11 +697,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -808,11 +810,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.infantry) +
-          `**|** *Infantry* ` +
+          `  *Infantry* ` +
           emoji(emo.conquering) +
-          `**|** *Conquering* ` +
+          `  *Conquering* ` +
           emoji(emo.skill) +
-          `**|** *Skill*`,
+          `  *Skill*`,
       });
       embed2.setColor("#FFDC00");
       embed2.setImage(
@@ -834,9 +836,9 @@ module.exports = {
           emoji(emo.guan) +
           emoji(emo.AlexandertheGreat) +
           emoji(emo.CheokJungyeong137x300) +
-          emoji(
-            emo.HaraldSigurdsson1
-          )`\n\n__Videos Guide :__ \n>>> [Pakal x CJG](https://youtu.be/Cg1gYr_JUpE)\n [Pakal testing](https://youtu.be/AyQXYGW_BAE)`
+          emoji(emo.HaraldSigurdsson1)`\n\n` +
+          emoji(emo.yt) +
+          ` __Videos Guide :__ \n>>> [Pakal x CJG](https://youtu.be/Cg1gYr_JUpE)\n [Pakal testing](https://youtu.be/AyQXYGW_BAE)`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -849,11 +851,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -960,11 +962,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrion* ` +
+            `  *Garrion* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -1068,11 +1070,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.infantry) +
-          `**|** *Infantry* ` +
+          `  *Infantry* ` +
           emoji(emo.vesatility) +
-          `**|** *Versatility* ` +
+          `  *Versatility* ` +
           emoji(emo.skill) +
-          `**|** *Skill*`,
+          `  *Skill*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "scipio") {
@@ -1103,11 +1105,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1214,11 +1216,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -1317,11 +1319,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.infantry) +
-          `**|** *Infantry* ` +
+          `  *Infantry* ` +
           emoji(emo.conquering) +
-          `**|** *Conquering* ` +
+          `  *Conquering* ` +
           emoji(emo.defense) +
-          `**|** *Defense*`,
+          `  *Defense*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "zenobia") {
@@ -1343,7 +1345,9 @@ module.exports = {
           emoji(emo.Theodora) +
           emoji(emo.CharlesMartel) +
           emoji(emo.YiSeongGye) +
-          `\n\n__Video Guides :__\n>>> **[Zenobia x Harald](https://youtu.be/bTNvSTP_Hkw)**`
+          `  \n\n` +
+          emoji(emo.yt) +
+          ` __Video Guides :__\n>>> **[Zenobia x Harald](https://youtu.be/bTNvSTP_Hkw)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1356,11 +1360,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1462,7 +1466,9 @@ module.exports = {
           emoji(emo.SunTzu) +
           emoji(emo.OsmanI) +
           emoji(emo.Boudica) +
-          `\n\n__Video Guide :__\n>>> **[Water general](https://youtu.be/F5qZsyWgH0s)**`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__\n>>> **[Water general](https://youtu.be/F5qZsyWgH0s)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1475,11 +1481,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -1581,7 +1587,9 @@ module.exports = {
           emoji(emo.EuljiMundeok) +
           emoji(emo.OsmanI) +
           emoji(emo.guan) +
-          `\n\n__Video Guides :__\n>>> **[Suntzu Guides](https://youtu.be/sptyo_VzrpE)\n [Suntzu complete guide](https://youtu.be/UBR23VSDaAA)**`
+          `  \n\n` +
+          emoji(emo.yt) +
+          ` __Video Guides :__\n>>> **[Suntzu Guides](https://youtu.be/sptyo_VzrpE)\n [Suntzu complete guide](https://youtu.be/UBR23VSDaAA)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1594,11 +1602,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.infantry) +
-            `**|** *Infantry* ` +
+            `  *Infantry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrion* ` +
+            `  *Garrion* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",

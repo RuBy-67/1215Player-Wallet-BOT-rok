@@ -126,7 +126,9 @@ module.exports = {
           emoji(emo.WuZetian) +
           emoji(emo.SunTzu) +
           emoji(emo.Hermann) +
-          `\n\n__Video Guides :__\n>>> **[YSG-Guide_NotCasuals](https://youtu.be/THvz7d6Qj7A)**`
+          `  \n\n` +
+          emoji(emo.yt) +
+          ` __Video Guides :__\n>>> **[YSG-Guide_NotCasuals](https://youtu.be/THvz7d6Qj7A)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -139,11 +141,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `*Archery* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            ` *Garrison* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            ` *Skill*`,
         },
         {
           name: "Overall :",
@@ -240,7 +242,9 @@ module.exports = {
           emoji(emo.EdwardofWoodstock) +
           emoji(emo.ElCid) +
           emoji(emo.ArtemisiaI11) +
-          `\n\n__Video Guides :__\n>>> **[Talent Pairing_Shinshi42](https://youtu.be/UAadVht3huo) \n [F2p Value?_Shinshi42](https://youtu.be/zUCgREi6n34)**`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guides :__\n>>> **[Talent Pairing_Shinshi42](https://youtu.be/UAadVht3huo) \n [F2p Value?_Shinshi42](https://youtu.be/zUCgREi6n34)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -253,11 +257,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatile* ` +
+            `  *Versatile* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -363,11 +367,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -475,11 +479,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -587,11 +591,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -695,11 +699,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -805,11 +809,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.conquering) +
-            `**|** *conquering* ` +
+            `  *conquering* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -917,11 +921,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -1029,11 +1033,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *skill*`,
+            `  *skill*`,
         },
         {
           name: "Overall :",
@@ -1143,11 +1147,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1250,11 +1254,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.archer) +
-          `**|** *Archery* ` +
+          `  *Archery* ` +
           emoji(emo.conquering) +
-          `**|** *Conquering* ` +
+          `  *Conquering* ` +
           emoji(emo.support) +
-          `**|** *Support*`,
+          `  *Support*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "bp") {
@@ -1285,11 +1289,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.archer) +
-          `**|** *Archery* ` +
+          `  *Archery* ` +
           emoji(emo.vesatility) +
-          `**|** *Versatile* ` +
+          `  *Versatile* ` +
           emoji(emo.skill) +
-          `**|** *Skill*`,
+          `  *Skill*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "hermann") {
@@ -1319,11 +1323,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.archer) +
-          `**|** *Archery* ` +
+          `  *Archery* ` +
           emoji(emo.garrison) +
-          `**|** *Garrison* ` +
+          `  *Garrison* ` +
           emoji(emo.skill) +
-          `**|** *Skill*`,
+          `  *Skill*`,
       });
 
       return interaction.reply({ embeds: [embed] });
@@ -1355,11 +1359,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -1467,11 +1471,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1573,11 +1577,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.archer) +
-            `**|** *Archery* ` +
+            `  *Archery* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",

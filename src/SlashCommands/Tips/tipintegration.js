@@ -107,11 +107,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -215,11 +215,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.integration) +
-          `**|** *Integration* ` +
+          `  *Integration* ` +
           emoji(emo.garrison) +
-          `**|** *Garrison* ` +
+          `  *Garrison* ` +
           emoji(emo.support) +
-          `**|** *Support*`,
+          `  *Support*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "diaochan") {
@@ -252,11 +252,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -359,11 +359,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.integration) +
-          `**|** *Integration* ` +
+          `  *Integration* ` +
           emoji(emo.gathering) +
-          `**|** *Peacekeeping* ` +
+          `  *Peacekeeping* ` +
           emoji(emo.support) +
-          `**|** *Support*`,
+          `  *Support*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "joan") {
@@ -391,11 +391,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.gathering) +
-            `**|** *Gathering* ` +
+            `  *Gathering* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -504,11 +504,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -612,11 +612,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.gathering) +
-            `**|** *Gatering* ` +
+            `  *Gatering* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -722,11 +722,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -829,11 +829,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.integration) +
-            `**|** *Integration* ` +
+            `  *Integration* ` +
             emoji(emo.gathering) +
-            `**|** *Gathering* ` +
+            `  *Gathering* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -938,11 +938,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.integration) +
-          `**|** *Integration* ` +
+          `  *Integration* ` +
           emoji(emo.gathering) +
-          `**|** *Gathering* ` +
+          `  *Gathering* ` +
           emoji(emo.attack) +
-          `**|** *Attack*`,
+          `  *Attack*`,
       });
       embed2.setColor("#FFDC00");
       embed2.setImage(

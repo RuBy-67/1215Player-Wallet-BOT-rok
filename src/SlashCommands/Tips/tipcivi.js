@@ -87,9 +87,9 @@ module.exports = {
         "https://cdn.discordapp.com/attachments/1069360006908084245/1069362432318914681/arabia-flag.png"
       );
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander:**__ " +
           emoji(emo.Baibars) +
-          " / *Baibars*\n__**Special Units :**__" +
+          " / *Baibars*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Mamluk) +
           " / *Mamluk*\n\n	__**Perks :**__\n> Increase cavalry attack by 5%\n> Increase damage dealt to barbarians and other neutral units by 10%;\n> Increase damage dealt by rallied armies by 5%.\n"
       );
@@ -101,9 +101,9 @@ module.exports = {
       );
       embed.setColor("#C63101");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.Boudica) +
-          " / *Boudica*\n__**Special Units :**__" +
+          " / *Boudica*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Longbowman) +
           " / *Longbowman*\n\n	__**Perks :**__\n> Increase archer attack by 5%;\n> Increase troop training speed by 5%;\n> Increase ally garrison capacity by 20%.\n"
       );
@@ -115,9 +115,9 @@ module.exports = {
       );
       embed.setColor("#8202E6");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.Belisarius) +
-          " / *Belisarius*\n__**Special Units :**__" +
+          " / *Belisarius*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Conquistador) +
           " / *Cataphract*\n\n	__**Perks :**__\n> Increase cavalry health by 5%;\n> Increase stone gathering speed by 10%;\n> Increase Hospital capacity by 15%.\n"
       );
@@ -129,9 +129,9 @@ module.exports = {
       );
       embed.setColor("#F00303");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.SunTzu) +
-          " / *Sun Tzu*\n__**Special Units :**__" +
+          " / *Sun Tzu*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_ChuKoNu) +
           " / *ChuKoNu*\n\n	__**Perks :**__\n> Increase troop defense by 3%;\n> Increase action point recovery by 5%;\n> Increase building speed by 5%.\n"
       );
@@ -143,9 +143,9 @@ module.exports = {
       );
       embed.setColor("#DDA700");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.imhotepframe) +
-          " / *Imhotep*\n__**Special Units :**__" +
+          " / *Imhotep*\n__**Special Units :**__ " +
           emoji(emo.Troop_Janissary) +
           " / *Maryannu*\n\n	__**Perks :**__\n> Increase archer attack by 5%;\n> Increase damage dealt by rallied armies by 5%;\n> Increase building and research speed by 1.5%.\n"
       );
@@ -157,9 +157,9 @@ module.exports = {
       );
       embed.setColor("#005EDD");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.JoanofArc1) +
-          " / *Joan of Arc*\n__**Special Units :**__" +
+          " / *Joan of Arc*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Throwing_Axeman) +
           " / *Throwing_Axeman*\n\n	__**Perks :**__\n> Increase troop health by 3%;\n> Increase wood gathering speed by 10%;\n> Increase Hospital healing speed by 20%.\n"
       );
@@ -171,9 +171,9 @@ module.exports = {
       );
       embed.setColor("#FFFFFF");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.Hermann) +
-          " / *Hermann*\n__**Special Units :**__" +
+          " / *Hermann*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Teutonic_Knightgerma) +
           " / *Teutonic_Knight*\n\n	__**Perks :**__\n> Increase cavalry attack by 5%;\n> Increase troop training speed by 5%;\n> Increase action point recovery by 10%.\n"
       );
@@ -185,9 +185,9 @@ module.exports = {
       );
       embed.setColor("#FFD6FB");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.KusunokiMasashige) +
-          " / *Kusunoki Masashige*\n__**Special Units :**__" +
+          " / *Kusunoki Masashige*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Samurai) +
           " / *Samurai*\n\n	__**Perks :**__\n> Increase troop attack by 3%;\n> Increase scout march speed by 30%;\n> Increase resource gathering speed by 5%.\n"
       );
@@ -199,9 +199,9 @@ module.exports = {
       );
       embed.setColor("#0B00B2");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.EuljiMundeok) +
-          " / *Eulji Mundeok*\n__**Special Units :**__" +
+          " / *Eulji Mundeok*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Hwarang) +
           " / *Hwarang*\n\n	__**Perks :**__\n> Increase archer defense by 5%;\n> Increase Hospital capacity by 15%;\n> Increase research speed by 3%.\n"
       );
@@ -213,9 +213,9 @@ module.exports = {
       );
       embed.setColor("#A101B1");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.ScipioAfricanus) +
-          " / *Scipio Africanus*\n__**Special Units :**__" +
+          " / *Scipio Africanus*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Legionary) +
           " / *Legionary*\n\n	__**Perks :**__\n> Increase infantry defense by 5%;\n> Increase troop march speed by 5%;\n> Increase food gathering speed by 10%.\n"
       );
@@ -227,9 +227,9 @@ module.exports = {
       );
       embed.setColor("#CE0808");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.OsmanI) +
-          " / *OsmanI*\n__**Special Units :**__" +
+          " / *OsmanI*\n__**Special Units :**__ " +
           emoji(emo.Troop_Janissary) +
           " / *Janissary*\n\n	__**Perks :**__\n> Increase archer health by 5%;\n> Increase troop march speed by 5%;\n> Increase active skill damage by 5%.\n"
       );
@@ -241,9 +241,9 @@ module.exports = {
       );
       embed.setColor("#A20B0B");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.Pelagius) +
-          " / *OsmanI*\n__**Special Units :**__" +
+          " / *OsmanI*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Conquistador) +
           " / *Conquistador*\n\n	__**Perks :**__\n> Increase cavalry defense by 5%;\n> Increase experience gained from barbarians and other neutral units by 10%;\n> Increase resource production by 20%.\n"
       );
@@ -255,9 +255,9 @@ module.exports = {
       );
       embed.setColor("#1FDBDB");
       embed.setDescription(
-        "__**Starting Commander: **__" +
+        "__**Starting Commander: **__ " +
           emoji(emo.bjornironside2) +
-          " / *Bjorn Ironside*\n__**Special Units :**__" +
+          " / *Bjorn Ironside*\n__**Special Units :**__ " +
           emoji(emo.Troop_Elite_Legionary) +
           " / *Berserker*\n\n	__**Perks :**__\n> Increase infantry attack by 5%;\n> Increase counterattack damage by 3%;\nIncrease troop load by 10%.\n"
       );

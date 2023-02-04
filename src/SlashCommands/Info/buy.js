@@ -11,7 +11,7 @@ module.exports = {
     }
     const embed = new MessageEmbed()
       .setTitle("1215 Shopping ")
-      .setDescription("🛠️ Commands Buy in build")
+      .setDescription("🛠️ More Commands Buy in build")
       .addFields(
         {
           name: "Ressources",

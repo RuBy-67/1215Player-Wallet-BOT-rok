@@ -121,9 +121,9 @@ module.exports = {
       );
       embed.setDescription(
         `Attila is the best cavalry commander in Rise of Kingdoms. There is no commander in Rise Of Kingdoms that can stop Attila from doing an insane amount of damage. After nerf Attila is still strongest commander. His main mission is to rally buildings.\n\n__Best Pairing :__ \n` +
-          emoji(
-            emo.TakedaShingen
-          )`\n\n__Video Guide :__ \n>>> [Attila x Takeda](https://youtu.be/Ew-aJ3UhNsA)`
+          emoji(emo.TakedaShingen)`\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__ \n>>> **[Attila x Takeda](https://youtu.be/Ew-aJ3UhNsA)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -136,11 +136,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.conquering) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -244,11 +244,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -351,11 +351,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalery* ` +
+            `  *Cavalery* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.defense) +
-            `**|** *Defense*`,
+            `  *Defense*`,
         },
         {
           name: "Overall :",
@@ -464,11 +464,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.cavalry) +
-          `**|** *Cavalry* ` +
+          `  *Cavalry* ` +
           emoji(emo.peacekeeping) +
-          `**|** *Peacekeeping* ` +
+          `  *Peacekeeping* ` +
           emoji(emo.mobility) +
-          `**|** *Mobility*`,
+          `  *Mobility*`,
       });
       embed2.setColor("#FFDC00");
       embed2.setImage(
@@ -492,7 +492,9 @@ module.exports = {
           emoji(emo.GenghisKhan1) +
           emoji(emo.Attila) +
           emoji(emo.Saladin) +
-          `\n\n__Video Guide :__\n>>> [Chandragupta Maurya guide](https://youtu.be/RNomkqOsqLU)`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__\n>>> [Chandragupta Maurya guide](https://youtu.be/RNomkqOsqLU)`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -505,11 +507,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -606,7 +608,9 @@ module.exports = {
           emoji(emo.CaoCao) +
           emoji(emo.MinamotonoYoshitsune) +
           emoji(emo.Belisarius) +
-          `\n\n__Video Guide :__ \n>>> [Genghis Khan Walkthrough](https://youtu.be/2D10yudDdIs)`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__ \n>>> [Genghis Khan Walkthrough](https://youtu.be/2D10yudDdIs)`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -619,11 +623,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -722,11 +726,11 @@ module.exports = {
         value:
           "\u200B" +
           emoji(emo.cavalry) +
-          `**|** *Cavalry* ` +
+          `  *Cavalry* ` +
           emoji(emo.garrison) +
-          `**|** *Garrison* ` +
+          `  *Garrison* ` +
           emoji(emo.mobility) +
-          `**|** *Mobility*`,
+          `  *Mobility*`,
       });
       return interaction.reply({ embeds: [embed] });
     } else if (com == "jan") {
@@ -755,11 +759,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -864,11 +868,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -984,11 +988,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.support) +
-            `**|** *Support*`,
+            `  *Support*`,
         },
         {
           name: "Overall :",
@@ -1080,9 +1084,9 @@ module.exports = {
       );
       embed.setDescription(
         `__Best Pairing :__ \n` +
-          emoji(
-            emo.Attila
-          )`\n\n__Video Guide :__\n>>> [Takeda, Bad ?](https://youtu.be/g3suKMkoPKA)`
+          emoji(emo.Attila)`\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__\n>>> [Takeda, Bad ?](https://youtu.be/g3suKMkoPKA)`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1095,11 +1099,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.mobility) +
-            `**|** *Mobility*`,
+            `  *Mobility*`,
         },
         {
           name: "Overall :",
@@ -1203,11 +1207,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *cavalry* ` +
+            `  *cavalry* ` +
             emoji(emo.vesatility) +
-            `**|** *Versatility* ` +
+            `  *Versatility* ` +
             emoji(emo.attack) +
-            `**|** *Attack*`,
+            `  *Attack*`,
         },
         {
           name: "Overall :",
@@ -1312,11 +1316,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -1412,7 +1416,9 @@ module.exports = {
           emoji(emo.Pelagius) +
           emoji(emo.SunTzu) +
           emoji(emo.KusunokiMasashige) +
-          `\n\n__Video Guide :__ \n>>> **[Baibars Guide](https://youtu.be/2R1EHCXqQlI)**`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__ \n>>> **[Baibars Guide](https://youtu.be/2R1EHCXqQlI)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -1425,11 +1431,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.conquering) +
-            `**|** *Conquering* ` +
+            `  *Conquering* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
@@ -1540,11 +1546,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.peacekeeping) +
-            `**|** *Peacekeeping* ` +
+            `  *Peacekeeping* ` +
             emoji(emo.mobility) +
-            `**|** *Mobility*`,
+            `  *Mobility*`,
         },
         {
           name: "Overall :",
@@ -1657,11 +1663,11 @@ module.exports = {
           value:
             "\u200B" +
             emoji(emo.cavalry) +
-            `**|** *Cavalry* ` +
+            `  *Cavalry* ` +
             emoji(emo.garrison) +
-            `**|** *Garrison* ` +
+            `  *Garrison* ` +
             emoji(emo.skill) +
-            `**|** *Skill*`,
+            `  *Skill*`,
         },
         {
           name: "Overall :",
