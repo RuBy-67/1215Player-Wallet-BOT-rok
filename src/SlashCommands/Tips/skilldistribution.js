@@ -10,7 +10,7 @@ module.exports = {
       return client.emojis.cache.get(id).toString();
     }
     const embed = new MessageEmbed()
-      .setTitle("Social Link")
+      .setTitle("Skill distribution")
       .setDescription(
         "There are five main formations of skills that your commanders can take. In this part of the article we will elaborate on which commander should take which kind of formation. The formation options are `5/1/1/1`,`5/5/1/1`,`5/5/5/1`,`5/5/5/5`,`1/5/0/0`. This basically refers to the level at which your commander's skills should be maximized. 5 means five stars and 1 means one star.\n\n`5/1/1/1` **Skill distribution :**\n> " +
           emoji(emo.lubu1) +

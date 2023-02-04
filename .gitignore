@@ -3,3 +3,4 @@ node_modules
 src/jsons/config.json
 src/jsons/credentials.json
 src/SlashCommands/Info/kdteams.js
+src/SlashCommands/Tips/ex.js
