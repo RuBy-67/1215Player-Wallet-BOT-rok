@@ -294,7 +294,7 @@ module.exports = {
             },
             {
               name: "Scipio Africanus Prime",
-              value: "scipio",
+              value: "scipiop",
             },
             {
               name: "Sun Tzu",
@@ -369,7 +369,7 @@ module.exports = {
             },
             {
               name: "Joan of arc Prime",
-              value: "joan",
+              value: "joanp",
             },
             {
               name: "Minamoto no Yoshitsune",
@@ -701,6 +701,220 @@ module.exports = {
             emoji(emo.etoile_plein) +
             emoji(emo.etoile_plein) +
             emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "alexander") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Alexander Nevsky");
+      embed.setURL("https://www.rok.guide/commander/alexander-nevsky/");
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450074062868/alexander-nevsky.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1070804040620970126/alexander-nevsky-talents-1024x575.png"
+      );
+      embed.setDescription(
+        `Alexander Nevsky is the most powerful legendary cavalry commander in Rise Of Kingdoms, providing an insane amount of nuke and survivability. The talent tree of Alexander Nevsky is excellent, but you do not require it because he is the commander you will use as secondary commander the majority of the time, and we all know that the secondary commander's talent tree does not work.\n\n__Best Pairing :__ \n` +
+          emoji(emo.xiangyu) +
+          emoji(emo.WilliamI) +
+          emoji(emo.MinamotonoYoshitsune) +
+          emoji(emo.ChandraguptaMaurya1)
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360450074062868/alexander-nevsky.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.cavalry) +
+            `  *Cavalry* ` +
+            emoji(emo.vesatility) +
+            `  *Versatility* ` +
+            emoji(emo.skill) +
+            `  *Skill*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        }
+      );
+      return interaction.reply({ embeds: [embed] });
+    } else if (com == "joanp") {
+      embed.setColor("#FFDC00");
+      embed.setTitle("Joan of Arc Prime");
+      embed.setURL(
+        "https://riseofkingdomsguides.com/legendary-joan-of-arc-prime-talent-tree-build-and-guide/"
+      );
+      embed.setThumbnail(
+        "https://cdn.discordapp.com/attachments/1069360006908084245/1069360447565873182/1675020321320.png"
+      );
+      embed.setImage(
+        "https://cdn.discordapp.com/attachments/1069720356379709595/1071534071622140085/Legendary-Joan-Of-Arc-Prime-Talent-Tree-Build-1163x630.png"
+      );
+      embed.setDescription(
+        `Joan Of Arc Prime is a legendary cavalry commander in Rise Of Kingdoms with versatility, cavalry, and support talent tree. Joan Of Arc Prime is an extremely powerful commander for open-field fighting during KVK and Ark Of Osiris. Simply scroll down to see all of her skills, especially the first one that is insanely good for open-field fighting.`
+      );
+      embed.setAuthor({
+        name: "rok-guide",
+        iconURL:
+          "https://cdn.discordapp.com/attachments/1069360006908084245/1069360447565873182/1675020321320.png",
+      });
+      embed.setFields(
+        {
+          name: "Specialties :",
+          value:
+            "\u200B" +
+            emoji(emo.cavalry) +
+            `  *Cavalry* ` +
+            emoji(emo.vesatility) +
+            `  *Versatility* ` +
+            emoji(emo.support) +
+            `  *Support*`,
+        },
+        {
+          name: "Overall :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Open Field :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Rallying Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Cities :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            emoji(emo.etoile_vide) +
+            "*",
+          inline: true,
+        },
+        {
+          name: "Defending Object :",
+          value:
+            "*" +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_plein) +
+            emoji(emo.etoile_vide) +
             emoji(emo.etoile_vide) +
             emoji(emo.etoile_vide) +
             "*",
@@ -3880,7 +4094,9 @@ module.exports = {
           emoji(emo.Baibars) +
           emoji(emo.AlexandertheGreat) +
           emoji(emo.Belisarius) +
-          `__Video Guide :__\n>>> **[Guide Free commander](https://youtu.be/FrT0Kao_p-A)**`
+          `\n\n` +
+          emoji(emo.yt) +
+          ` __Video Guide :__\n>>> **[Guide Free commander](https://youtu.be/FrT0Kao_p-A)**`
       );
       embed.setAuthor({
         name: "rok-guide",
@@ -7477,7 +7693,7 @@ module.exports = {
           `  *Skill*`,
       });
       return interaction.reply({ embeds: [embed] });
-    } else if (com == "scipio") {
+    } else if (com == "scipiop") {
       embed.setColor("#FFDC00");
       embed.setTitle("Scipio Africanus [P]");
       embed.setURL("https://www.rok.guide/alexander-the-great/");
