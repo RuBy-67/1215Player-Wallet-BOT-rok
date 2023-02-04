@@ -35,7 +35,7 @@ module.exports = {
         {
           name: emoji(emo.tips) + " Tips",
           value:
-            "Commander List + Talent tree :\n`/tips_infantry`\n`/tips_cavalry`\n`/tips_archery`\n`/tips_leadership`\n`/tips_integration`\n\n`/tips_skill`: Tips on best skill ditribution\n`/tips_civilisation`: Tips on civilisation",
+            "Commander List + Talent tree :\n`/tips infantry`\n`/tips cavalry`\n`/tips archery`\n`/tips leadership`\n`/tips integration`\n\n`/tips_skill`: Tips on best skill ditribution\n`/tips civilisation`: Tips on civilisation",
           inline: true,
         }
       )
