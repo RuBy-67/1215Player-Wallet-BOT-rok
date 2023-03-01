@@ -3,7 +3,7 @@ const emo = require(`../../jsons/emoji.json`);
 
 module.exports = {
   name: "help",
-  description: "Shows the help page!",
+  description: "Shows the help page !",
   options: null,
   run: async (client, interaction, args) => {
     function emoji(id) {
